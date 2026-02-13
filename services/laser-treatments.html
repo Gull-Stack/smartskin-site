@@ -18,72 +18,8 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <style>
-        :root { --navy: #1e3a5f; --navy-light: #2d5a8a; --gold: #c9a227; --gold-light: #dbb84d; --warm-cream: #f8f6f3; --text-dark: #1a1a1a; --text-muted: #5a6a7a; --white: #ffffff; --border: #e5e5e5; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Open Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
-        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 600; }
-        .top-bar { background: var(--navy); color: var(--white); padding: 10px 0; font-size: 14px; }
-        .top-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        .top-bar a { color: var(--gold); text-decoration: none; font-weight: 500; }
-        header { background: var(--white); padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
-        header .container { display: flex; justify-content: space-between; align-items: center; }
-        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .logo img { height: 50px; width: auto; }
-        .logo-text h1 { font-size: 22px; color: var(--navy); line-height: 1.2; }
-        .logo-text span { font-size: 11px; color: var(--text-muted); font-family: 'Open Sans', sans-serif; }
-        nav ul { display: flex; list-style: none; gap: 28px; }
-        nav a { text-decoration: none; color: var(--text-dark); font-weight: 500; font-size: 15px; }
-        nav a:hover { color: var(--gold); }
-        .btn { display: inline-block; padding: 14px 28px; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 15px; transition: all 0.2s; }
-        .btn-primary { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--white); }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(201, 162, 39, 0.4); }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        .page-header { background: linear-gradient(135deg, var(--warm-cream) 0%, #fff 100%); padding: 60px 0; text-align: center; }
-        .page-header h1 { font-size: 48px; color: var(--navy); margin-bottom: 16px; }
-        .page-header p { font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto; }
-        .breadcrumb { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; font-size: 14px; }
-        .breadcrumb a { color: var(--gold); text-decoration: none; }
-        .breadcrumb span { color: var(--text-muted); }
-        .content-section { padding: 80px 0; }
-        .content-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; align-items: start; }
-        .main-content h2 { font-size: 32px; color: var(--navy); margin-bottom: 20px; }
-        .main-content h3 { font-size: 24px; color: var(--navy); margin: 30px 0 15px; }
-        .main-content p { margin-bottom: 16px; color: var(--text-muted); }
-        .main-content ul { margin: 20px 0; padding-left: 20px; }
-        .main-content li { margin-bottom: 10px; color: var(--text-muted); }
-        .sidebar { position: sticky; top: 100px; }
-        .sidebar-card { background: var(--white); border-radius: 16px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 30px; }
-        .sidebar-card h4 { font-size: 20px; color: var(--navy); margin-bottom: 16px; }
-        .sidebar-card p { color: var(--text-muted); margin-bottom: 20px; font-size: 15px; }
-        .appointment-badge { background: linear-gradient(135deg, rgba(201,162,39,0.1), rgba(219,184,77,0.1)); padding: 12px 16px; border-radius: 8px; display: flex; align-items: center; gap: 10px; margin-bottom: 20px; font-size: 14px; font-weight: 500; color: var(--navy); }
-        .conditions-list { list-style: none; padding: 0; }
-        .conditions-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
-        .conditions-list li:last-child { border-bottom: none; }
-        .conditions-list a { color: var(--navy); text-decoration: none; font-weight: 500; }
-        .conditions-list a:hover { color: var(--gold); }
-        .treatment-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 30px 0; }
-        .treatment-card { background: var(--warm-cream); border-radius: 12px; padding: 24px; }
-        .treatment-card h4 { font-size: 18px; color: var(--navy); margin-bottom: 10px; }
-        .treatment-card p { color: var(--text-muted); font-size: 14px; margin: 0; }
-        .cta { background: linear-gradient(135deg, var(--navy), var(--navy-light)); padding: 80px 0; text-align: center; }
-        .cta h2 { font-size: 40px; color: var(--white); margin-bottom: 16px; }
-        .cta p { color: rgba(255,255,255,0.8); font-size: 18px; margin-bottom: 30px; }
-        footer { background: #0f2439; color: var(--white); padding: 60px 0 30px; }
-        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-        .footer-about p { color: rgba(255,255,255,0.7); margin-top: 16px; font-size: 14px; }
-        footer h4 { font-size: 16px; margin-bottom: 20px; color: var(--gold); }
-        footer ul { list-style: none; }
-        footer ul li { margin-bottom: 12px; }
-        footer ul a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; }
-        footer ul a:hover { color: var(--gold); }
-        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; font-size: 14px; color: rgba(255,255,255,0.5); flex-wrap: wrap; gap: 20px; }
-        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; font-size: 24px; color: var(--navy); }
-        @media (max-width: 992px) { .content-grid { grid-template-columns: 1fr; } .sidebar { position: static; } .footer-grid { grid-template-columns: 1fr 1fr; } .treatment-grid { grid-template-columns: 1fr; } }
-        @media (max-width: 768px) { .mobile-menu-btn { display: block; } nav { display: none; } .page-header h1 { font-size: 36px; } .footer-grid { grid-template-columns: 1fr; } }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="top-bar">
@@ -96,18 +32,19 @@
     <header>
         <div class="container">
             <a href="../" class="logo">
-                <img src="../images/Asset-2.png" alt="Smart Skin Dermatology Logo">
-                <div class="logo-text"><h1>Smart Skin Dermatology</h1><span>Lehi, Utah</span></div>
+                <img src="../images/smart-skin-07.png" alt="Smart Skin Dermatology Logo">
             </a>
-            <nav><ul>
-                <li><a href="../about/">Our Team</a></li>
-                <li><a href="../services/">Services</a></li>
-                <li><a href="../conditions/">Conditions</a></li>
-                <li><a href="../insurance.html">Insurance</a></li>
-                <li><a href="../blog/">Blog</a></li>
-            </ul></nav>
-            <a href="tel:3852733376" class="btn btn-primary">Call to Book</a>
-            <button class="mobile-menu-btn">☰</button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="../about/">Our Team</a></li>
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../conditions/">Conditions</a></li>
+                    <li><a href="../insurance.html">Insurance</a></li>
+                    <li><a href="../blog/">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="tel:3852733376" class="btn btn-primary header-cta">Book Appointment</a>
+            <button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('active')">☰</button>
         </div>
     </header>
     
@@ -117,7 +54,7 @@
                 <a href="../">Home</a><span>/</span><a href="./">Services</a><span>/</span><span>Laser Treatments</span>
             </div>
             <h1>Laser Treatments</h1>
-            <p>Advanced laser technology for hair removal, skin rejuvenation, and targeted skin concerns. Expert care in Lehi, Utah.</p>
+            <p>Advanced laser technology for hair removal, skin rejuvenation, and treatment of various skin concerns.</p>
         </div>
     </section>
     
@@ -125,75 +62,52 @@
         <div class="container">
             <div class="content-grid">
                 <div class="main-content">
-                    <h2>Transform Your Skin with Advanced Laser Technology</h2>
-                    <p>At Smart Skin Dermatology, we use state-of-the-art laser technology to address a wide range of skin concerns. Our experienced providers deliver safe, effective treatments customized to your unique needs and skin type.</p>
+                    <h2>Advanced Laser Technology for Beautiful Skin</h2>
+                    <p>At Smart Skin Dermatology, we offer a range of laser treatments to address various skin concerns. Our experienced providers use state-of-the-art laser technology to deliver safe, effective results with minimal downtime.</p>
                     
                     <h3>Our Laser Services</h3>
-                    
-                    <div class="treatment-grid">
-                        <div class="treatment-card">
-                            <h4>Laser Hair Removal</h4>
-                            <p>Permanent hair reduction for smooth, hair-free skin. Safe for most skin types with minimal discomfort.</p>
-                        </div>
-                        <div class="treatment-card">
-                            <h4>Sun Damage Treatment</h4>
-                            <p>Reduce brown spots, sun spots, and hyperpigmentation caused by UV exposure.</p>
-                        </div>
-                        <div class="treatment-card">
-                            <h4>Vascular Lesion Treatment</h4>
-                            <p>Eliminate spider veins, broken capillaries, and redness with targeted laser therapy.</p>
-                        </div>
-                        <div class="treatment-card">
-                            <h4>Skin Resurfacing</h4>
-                            <p>Improve skin texture, reduce fine lines, and reveal fresher, younger-looking skin.</p>
-                        </div>
-                    </div>
-                    
-                    <h3>Conditions We Treat with Lasers</h3>
                     <ul>
-                        <li><strong>Unwanted Hair:</strong> Face, underarms, bikini, legs, back, and more</li>
-                        <li><strong>Sun Spots & Age Spots:</strong> Brown discoloration from sun damage</li>
-                        <li><strong>Spider Veins:</strong> Small red or purple veins on face and legs</li>
-                        <li><strong>Rosacea Redness:</strong> Background redness and visible blood vessels</li>
-                        <li><strong>Acne Scars:</strong> Textural irregularities from past breakouts</li>
-                        <li><strong>Fine Lines & Wrinkles:</strong> Early signs of aging</li>
-                        <li><strong>Uneven Skin Tone:</strong> Pigmentation irregularities</li>
+                        <li><strong>Laser Hair Removal:</strong> Permanent reduction of unwanted hair on face and body</li>
+                        <li><strong>IPL Photofacial:</strong> Improve sun damage, age spots, and uneven skin tone</li>
+                        <li><strong>Laser Skin Resurfacing:</strong> Reduce fine lines, wrinkles, and acne scars</li>
+                        <li><strong>Vascular Laser:</strong> Treat broken blood vessels, spider veins, and rosacea</li>
+                        <li><strong>Pigment Laser:</strong> Fade dark spots, melasma, and hyperpigmentation</li>
+                        <li><strong>Tattoo Removal:</strong> Safe removal of unwanted tattoos</li>
                     </ul>
                     
-                    <h3>Why Choose Medical-Grade Laser Treatment?</h3>
+                    <h3>Benefits of Medical Laser Treatments</h3>
                     <ul>
-                        <li><strong>Superior Results:</strong> Medical-grade lasers deliver more powerful, effective treatments than spa devices</li>
-                        <li><strong>Safety First:</strong> Treatments performed by trained medical professionals who understand skin health</li>
-                        <li><strong>Customized Settings:</strong> We adjust parameters for your specific skin type and concerns</li>
-                        <li><strong>Comprehensive Care:</strong> Address underlying skin conditions alongside cosmetic concerns</li>
+                        <li><strong>Medical Expertise:</strong> Treatments supervised by board-certified dermatologists</li>
+                        <li><strong>Advanced Technology:</strong> State-of-the-art lasers for optimal results</li>
+                        <li><strong>Safety First:</strong> Proper protocols and experienced providers</li>
+                        <li><strong>Customized Care:</strong> Treatments tailored to your skin type and concerns</li>
                     </ul>
                     
                     <h3>What to Expect</h3>
-                    <p>During your laser treatment consultation, we'll:</p>
+                    <p>During your laser consultation, we will:</p>
                     <ul>
                         <li>Evaluate your skin type and concerns</li>
                         <li>Discuss your goals and expectations</li>
                         <li>Recommend the most appropriate laser treatment</li>
                         <li>Explain the procedure, number of sessions needed, and recovery</li>
-                        <li>Provide pre- and post-treatment care instructions</li>
+                        <li>Provide pre and post-treatment instructions</li>
                     </ul>
                     
-                    <h3>Laser Hair Removal Details</h3>
-                    <p>Laser hair removal is one of our most popular treatments. Here's what you should know:</p>
+                    <h3>Preparing for Laser Treatment</h3>
+                    <p>General guidelines for laser treatments:</p>
                     <ul>
-                        <li><strong>How It Works:</strong> Laser light targets hair follicles to prevent future growth</li>
-                        <li><strong>Sessions Needed:</strong> Most areas require 6-8 treatments for optimal results</li>
-                        <li><strong>Treatment Intervals:</strong> Sessions are typically 4-6 weeks apart</li>
-                        <li><strong>Preparation:</strong> Avoid sun exposure and waxing before treatment</li>
-                        <li><strong>Results:</strong> Permanent hair reduction with smooth, hair-free skin</li>
+                        <li>Avoid sun exposure and self-tanners for 2-4 weeks before treatment</li>
+                        <li>Discontinue certain skincare products as advised</li>
+                        <li>Shave the treatment area (for hair removal) before your appointment</li>
+                        <li>Arrive with clean skin, free of makeup and lotions</li>
                     </ul>
                 </div>
                 
                 <div class="sidebar">
                     <div class="sidebar-card">
-                        <div class="appointment-badge">✨ Consultations Available</div>
-                        <h4>Schedule Your Laser Consultation</h4>
-                        <p>Discover which laser treatments can help you achieve your skin goals.</p>
+                        <div class="appointment-badge">✨ Complimentary Consultations</div>
+                        <h4>Schedule Your Consultation</h4>
+                        <p>Learn which laser treatment is right for your skin concerns.</p>
                         <a href="tel:3852733376" class="btn btn-primary" style="width: 100%; text-align: center;">Call (385) 273-3376</a>
                     </div>
                     
@@ -212,22 +126,56 @@
     
     <section class="cta">
         <div class="container">
-            <h2>Ready to Transform Your Skin?</h2>
-            <p>Schedule a laser consultation to learn which treatments can help you achieve your goals.</p>
-            <a href="tel:3852733376" class="btn btn-primary">Call (385) 273-3376 Today</a>
+            <h2>Discover the Power of Laser Treatments</h2>
+            <p>Schedule a consultation to learn how our advanced laser technology can help you achieve your skin goals.</p>
+            <a href="tel:3852733376" class="btn btn-accent">Call (385) 273-3376 Today</a>
         </div>
     </section>
     
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-about"><a href="../" class="logo"><img src="../images/Asset-2.png" alt="Smart Skin Dermatology" style="height: 40px; filter: brightness(0) invert(1);"></a><p>Board-certified dermatology care in Lehi, Utah. Serving Utah County with comprehensive skin care solutions for over 30 years.</p></div>
-                <div><h4>Services</h4><ul><li><a href="medical-dermatology.html">Medical Dermatology</a></li><li><a href="cosmetic-dermatology.html">Cosmetic Dermatology</a></li><li><a href="surgical-dermatology.html">Surgical Dermatology</a></li><li><a href="botox.html">Botox & Dysport</a></li></ul></div>
-                <div><h4>Conditions</h4><ul><li><a href="../conditions/acne.html">Acne</a></li><li><a href="../conditions/eczema.html">Eczema</a></li><li><a href="../conditions/psoriasis.html">Psoriasis</a></li><li><a href="../conditions/rosacea.html">Rosacea</a></li></ul></div>
-                <div><h4>Quick Links</h4><ul><li><a href="../about/">Our Team</a></li><li><a href="../insurance.html">Insurance</a></li><li><a href="../blog/">Blog</a></li></ul></div>
+                <div class="footer-about">
+                    <img src="../images/smart-skin-07.png" alt="Smart Skin Dermatology Logo">
+                    <p>Board-certified dermatology care in Lehi, Utah. Serving Utah County with comprehensive skin care solutions for over 30 years.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="medical-dermatology.html">Medical Dermatology</a></li>
+                        <li><a href="cosmetic-dermatology.html">Cosmetic Dermatology</a></li>
+                        <li><a href="surgical-dermatology.html">Surgical Dermatology</a></li>
+                        <li><a href="botox.html">Botox & Dysport</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Conditions</h4>
+                    <ul>
+                        <li><a href="../conditions/acne.html">Acne</a></li>
+                        <li><a href="../conditions/eczema.html">Eczema</a></li>
+                        <li><a href="../conditions/psoriasis.html">Psoriasis</a></li>
+                        <li><a href="../conditions/rosacea.html">Rosacea</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../about/">Our Team</a></li>
+                        <li><a href="../insurance.html">Insurance</a></li>
+                        <li><a href="../blog/">Blog</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-bottom"><span>© 2026 Smart Skin Dermatology. All Rights Reserved.</span><span>3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043 | (385) 273-3376</span></div>
+            <div class="footer-bottom">
+                <span>© 2026 Smart Skin Dermatology. All Rights Reserved.</span>
+                <span>3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043 · (385) 273-3376</span>
+            </div>
         </div>
     </footer>
+    
+    <div class="mobile-cta">
+        <a href="tel:3852733376">📞 Call to Book Appointment</a>
+    </div>
 </body>
 </html>
