@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dermatology Services in Lehi, UT | Smart Skin Dermatology</title>
+    <meta name="description" content="Comprehensive dermatology services in Lehi, Utah. Medical, cosmetic & surgical dermatology, Botox, skin cancer screening, and laser treatments. Call (385) 273-3376.">
+    <link rel="canonical" href="https://gull-stack.github.io/smartskin-site/services/">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/cropped-favicon-32x32.png">
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gull-stack.github.io/smartskin-site/"},
+            {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://gull-stack.github.io/smartskin-site/services/"}
+        ]
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Smart Skin Dermatology",
+        "medicalSpecialty": "Dermatology",
+        "availableService": [
+            {"@type": "MedicalProcedure", "name": "Medical Dermatology", "description": "Treatment for acne, eczema, psoriasis, rosacea and skin conditions"},
+            {"@type": "MedicalProcedure", "name": "Cosmetic Dermatology", "description": "Chemical peels, microneedling, and skin rejuvenation"},
+            {"@type": "MedicalProcedure", "name": "Surgical Dermatology", "description": "Skin cancer removal and surgical procedures"},
+            {"@type": "MedicalProcedure", "name": "Botox & Dysport", "description": "Wrinkle-relaxing injectable treatments"},
+            {"@type": "MedicalProcedure", "name": "Skin Cancer Screening", "description": "Full-body skin cancer exams and early detection"},
+            {"@type": "MedicalProcedure", "name": "Laser Treatments", "description": "Hair removal, skin resurfacing, and pigmentation treatment"}
+        ]
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy: #1e3a5f;
+            --navy-light: #2d5a8a;
+            --gold: #c9a227;
+            --gold-light: #dbb84d;
+            --warm-cream: #f8f6f3;
+            --text-dark: #1a1a1a;
+            --text-muted: #5a6a7a;
+            --white: #ffffff;
+            --border: #e5e5e5;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; color: var(--text-dark); line-height: 1.6; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 600; }
+        
+        .top-bar { background: var(--navy); color: var(--white); padding: 10px 0; font-size: 14px; }
+        .top-bar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .top-bar a { color: var(--gold); text-decoration: none; font-weight: 500; }
+        
+        header { background: var(--white); padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo img { height: 50px; width: auto; }
+        .logo-text h1 { font-size: 22px; color: var(--navy); line-height: 1.2; }
+        .logo-text span { font-size: 11px; color: var(--text-muted); font-family: 'Open Sans', sans-serif; }
+        
+        nav ul { display: flex; list-style: none; gap: 28px; }
+        nav a { text-decoration: none; color: var(--text-dark); font-weight: 500; font-size: 15px; }
+        nav a:hover { color: var(--gold); }
+        
+        .btn { display: inline-block; padding: 14px 28px; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 15px; }
+        .btn-primary { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--white); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(201, 162, 39, 0.4); }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .page-header { background: linear-gradient(135deg, var(--warm-cream) 0%, #fff 100%); padding: 60px 0; text-align: center; }
+        .page-header h1 { font-size: 48px; color: var(--navy); margin-bottom: 16px; }
+        .page-header p { font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto; }
+        
+        .breadcrumb { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; font-size: 14px; }
+        .breadcrumb a { color: var(--gold); text-decoration: none; }
+        .breadcrumb span { color: var(--text-muted); }
+        
+        .services-section { padding: 80px 0; }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        
+        .service-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+            border-color: var(--gold);
+        }
+        
+        .service-card-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-card-image svg {
+            width: 80px;
+            height: 80px;
+            fill: var(--gold);
+        }
+        
+        .service-card-content { padding: 30px; }
+        
+        .service-card h3 { font-size: 22px; color: var(--navy); margin-bottom: 12px; }
+        .service-card p { color: var(--text-muted); margin-bottom: 16px; font-size: 15px; }
+        .service-card .learn-more { color: var(--gold); font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+        
+        .cta { background: linear-gradient(135deg, var(--navy), var(--navy-light)); padding: 80px 0; text-align: center; }
+        .cta h2 { font-size: 40px; color: var(--white); margin-bottom: 16px; }
+        .cta p { color: rgba(255,255,255,0.8); font-size: 18px; margin-bottom: 30px; }
+        
+        footer { background: #0f2439; color: var(--white); padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-about p { color: rgba(255,255,255,0.7); margin-top: 16px; font-size: 14px; }
+        footer h4 { font-size: 16px; margin-bottom: 20px; color: var(--gold); }
+        footer ul { list-style: none; }
+        footer ul li { margin-bottom: 12px; }
+        footer ul a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; }
+        footer ul a:hover { color: var(--gold); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; display: flex; justify-content: space-between; font-size: 14px; color: rgba(255,255,255,0.5); flex-wrap: wrap; gap: 20px; }
+        
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; font-size: 24px; color: var(--navy); }
+        
+        @media (max-width: 992px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn { display: block; }
+            nav { display: none; }
+            .page-header h1 { font-size: 36px; }
+            .services-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <span>📍 3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043</span>
+            <span>Call us: <a href="tel:3852733376">(385) 273-3376</a></span>
+        </div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <a href="../" class="logo">
+                <img src="../images/Asset-2.png" alt="Smart Skin Dermatology Logo">
+                <div class="logo-text">
+                    <h1>Smart Skin Dermatology</h1>
+                    <span>Lehi, Utah</span>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../about/">Our Team</a></li>
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../conditions/">Conditions</a></li>
+                    <li><a href="../insurance.html">Insurance</a></li>
+                    <li><a href="../blog/">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="tel:3852733376" class="btn btn-primary">Call to Book</a>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+    
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../">Home</a>
+                <span>/</span>
+                <span>Services</span>
+            </div>
+            <h1>Our Dermatology Services</h1>
+            <p>Comprehensive skin care solutions from board-certified dermatologists. From medical conditions to cosmetic enhancements, we've got you covered.</p>
+        </div>
+    </section>
+    
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <a href="medical-dermatology.html" class="service-card">
+                    <div class="service-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Medical Dermatology</h3>
+                        <p>Comprehensive diagnosis and treatment for acne, eczema, psoriasis, rosacea, and all skin conditions affecting your health and comfort.</p>
+                        <span class="learn-more">Learn More →</span>
+                    </div>
+                </a>
+                
+                <a href="cosmetic-dermatology.html" class="service-card">
+                    <div class="service-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Cosmetic Dermatology</h3>
+                        <p>Rejuvenate your appearance with chemical peels, microneedling, and advanced skincare treatments for radiant, youthful skin.</p>
+                        <span class="learn-more">Learn More →</span>
+                    </div>
+                </a>
+                
+                <a href="surgical-dermatology.html" class="service-card">
+                    <div class="service-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/></svg>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Surgical Dermatology</h3>
+                        <p>Expert surgical removal of skin cancers, cysts, moles, and other growths with precision techniques and minimal scarring.</p>
+                        <span class="learn-more">Learn More →</span>
+                    </div>
+                </a>
+                
+                <a href="botox.html" class="service-card">
+                    <div class="service-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 8L12 2.35 6.34 8A8.02 8.02 0 0 0 4 13.64c0 2 .78 4.11 2.34 5.67a7.99 7.99 0 0 0 11.32 0c1.56-1.56 2.34-3.67 2.34-5.67S19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"/></svg>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Botox & Dysport</h3>
+                        <p>FDA-approved wrinkle-relaxing treatments for a refreshed, natural look. Expertly administered by our experienced providers.</p>
+                        <span class="learn-more">Learn More →</span>
+                    </div>
+                </a>
+                
+                <a href="skin-cancer.html" class="service-card">
+                    <div class="service-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Skin Cancer Screening</h3>
+                        <p>Early detection saves lives. Comprehensive skin cancer screenings and expert treatment of melanoma and other skin cancers.</p>
+                        <span class="learn-more">Learn More →</span>
+                    </div>
+                </a>
+                
+                <a href="laser-treatments.html" class="service-card">
+                    <div class="service-card-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Laser Treatments</h3>
+                        <p>Advanced laser technology for hair removal, sun damage, broken blood vessels, and skin resurfacing treatments.</p>
+                        <span class="learn-more">Learn More →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Schedule Your Visit?</h2>
+            <p>Same-week appointments often available. Call today to book with our expert team.</p>
+            <a href="tel:3852733376" class="btn btn-primary">Call (385) 273-3376</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="../" class="logo">
+                        <img src="../images/Asset-2.png" alt="Smart Skin Dermatology" style="height: 40px; filter: brightness(0) invert(1);">
+                    </a>
+                    <p>Board-certified dermatology care in Lehi, Utah. Serving Utah County with comprehensive skin care solutions for over 30 years.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="medical-dermatology.html">Medical Dermatology</a></li>
+                        <li><a href="cosmetic-dermatology.html">Cosmetic Dermatology</a></li>
+                        <li><a href="surgical-dermatology.html">Surgical Dermatology</a></li>
+                        <li><a href="botox.html">Botox & Dysport</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Conditions</h4>
+                    <ul>
+                        <li><a href="../conditions/acne.html">Acne</a></li>
+                        <li><a href="../conditions/eczema.html">Eczema</a></li>
+                        <li><a href="../conditions/psoriasis.html">Psoriasis</a></li>
+                        <li><a href="../conditions/rosacea.html">Rosacea</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../about/">Our Team</a></li>
+                        <li><a href="../insurance.html">Insurance</a></li>
+                        <li><a href="../blog/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Smart Skin Dermatology. All Rights Reserved.</span>
+                <span>3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043 | (385) 273-3376</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

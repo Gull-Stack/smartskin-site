@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Dermatology Team in Lehi, UT | Smart Skin Dermatology</title>
+    <meta name="description" content="Meet the expert dermatology team at Smart Skin Dermatology in Lehi, Utah. Dr. David Smart, Dr. Eric Smart, and our experienced providers offer 30+ years of combined experience. Call (385) 273-3376.">
+    <link rel="canonical" href="https://gull-stack.github.io/smartskin-site/about/">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/cropped-favicon-32x32.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Our Dermatology Team | Smart Skin Dermatology - Lehi, UT">
+    <meta property="og:description" content="Board-certified dermatologists and experienced providers with 30+ years combined experience serving Utah County.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gull-stack.github.io/smartskin-site/about/">
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://gull-stack.github.io/smartskin-site/"},
+            {"@type": "ListItem", "position": 2, "name": "Our Team", "item": "https://gull-stack.github.io/smartskin-site/about/"}
+        ]
+    }
+    </script>
+    
+    <!-- Physician Schema - Dr. David Smart -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Physician",
+        "name": "Dr. David Smart",
+        "image": "https://gull-stack.github.io/smartskin-site/images/dr-smart-1.png",
+        "jobTitle": "Board-Certified Dermatologist",
+        "medicalSpecialty": "Dermatology",
+        "memberOf": {"@type": "MedicalOrganization", "name": "American Academy of Dermatology"},
+        "worksFor": {"@type": "MedicalBusiness", "name": "Smart Skin Dermatology"},
+        "address": {"@type": "PostalAddress", "streetAddress": "3200 W Clubhouse Dr, Ste 100", "addressLocality": "Lehi", "addressRegion": "UT", "postalCode": "84043"}
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy: #1e3a5f;
+            --navy-light: #2d5a8a;
+            --gold: #c9a227;
+            --gold-light: #dbb84d;
+            --warm-cream: #f8f6f3;
+            --text-dark: #1a1a1a;
+            --text-muted: #5a6a7a;
+            --white: #ffffff;
+            --border: #e5e5e5;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 600; }
+        
+        .top-bar {
+            background: var(--navy);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .top-bar a { color: var(--gold); text-decoration: none; font-weight: 500; }
+        
+        header {
+            background: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .logo img { height: 50px; width: auto; }
+        
+        .logo-text h1 { font-size: 22px; color: var(--navy); line-height: 1.2; }
+        .logo-text span { font-size: 11px; color: var(--text-muted); font-family: 'Open Sans', sans-serif; }
+        
+        nav ul { display: flex; list-style: none; gap: 28px; }
+        nav a { text-decoration: none; color: var(--text-dark); font-weight: 500; font-size: 15px; transition: color 0.2s; }
+        nav a:hover { color: var(--gold); }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            font-size: 15px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.4);
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, var(--warm-cream) 0%, #fff 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 48px;
+            color: var(--navy);
+            margin-bottom: 16px;
+        }
+        
+        .page-header p {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        
+        .breadcrumb a { color: var(--gold); text-decoration: none; }
+        .breadcrumb span { color: var(--text-muted); }
+        
+        /* Team Section */
+        .team-section {
+            padding: 80px 0;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+        
+        .team-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+        
+        .team-card.featured {
+            grid-column: span 2;
+            display: grid;
+            grid-template-columns: 400px 1fr;
+        }
+        
+        .team-card-image {
+            height: 300px;
+            background: var(--warm-cream);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .team-card.featured .team-card-image {
+            height: 100%;
+        }
+        
+        .team-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-card-content {
+            padding: 30px;
+        }
+        
+        .team-card h3 {
+            font-size: 24px;
+            color: var(--navy);
+            margin-bottom: 8px;
+        }
+        
+        .team-card .title {
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        
+        .team-card p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        
+        .credentials-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+        
+        .credential-tag {
+            background: var(--warm-cream);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: var(--navy);
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, var(--navy), var(--navy-light));
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta h2 { font-size: 40px; color: var(--white); margin-bottom: 16px; }
+        .cta p { color: rgba(255,255,255,0.8); font-size: 18px; margin-bottom: 30px; }
+        
+        /* Footer */
+        footer {
+            background: #0f2439;
+            color: var(--white);
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-about p { color: rgba(255,255,255,0.7); margin-top: 16px; font-size: 14px; }
+        footer h4 { font-size: 16px; margin-bottom: 20px; color: var(--gold); }
+        footer ul { list-style: none; }
+        footer ul li { margin-bottom: 12px; }
+        footer ul a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 14px; }
+        footer ul a:hover { color: var(--gold); }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; font-size: 24px; color: var(--navy); }
+        
+        @media (max-width: 992px) {
+            .team-card.featured { grid-column: span 1; grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn { display: block; }
+            nav { display: none; }
+            .page-header h1 { font-size: 36px; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span>📍 3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043</span>
+            <span>Call us: <a href="tel:3852733376">(385) 273-3376</a></span>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="../" class="logo">
+                <img src="../images/Asset-2.png" alt="Smart Skin Dermatology Logo">
+                <div class="logo-text">
+                    <h1>Smart Skin Dermatology</h1>
+                    <span>Lehi, Utah</span>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../about/">Our Team</a></li>
+                    <li><a href="../services/">Services</a></li>
+                    <li><a href="../conditions/">Conditions</a></li>
+                    <li><a href="../insurance.html">Insurance</a></li>
+                    <li><a href="../blog/">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="tel:3852733376" class="btn btn-primary">Call to Book</a>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../">Home</a>
+                <span>/</span>
+                <span>Our Team</span>
+            </div>
+            <h1>Meet Our Team</h1>
+            <p>Our board-certified dermatologists and experienced providers bring over 30 years of combined experience to serve Utah County families.</p>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="team-grid">
+                <!-- Dr. David Smart - Featured -->
+                <div class="team-card featured">
+                    <div class="team-card-image">
+                        <img src="../images/dr-smart-1.png" alt="Dr. David Smart - Board Certified Dermatologist in Lehi, Utah">
+                    </div>
+                    <div class="team-card-content">
+                        <h3>Dr. David Smart, MD</h3>
+                        <p class="title">Board-Certified Dermatologist | Founder</p>
+                        <p>Dr. David Smart founded Smart Skin Dermatology with a vision to provide exceptional, patient-centered dermatological care to Utah County families. With over 25 years of experience, he has built a reputation for clinical excellence and compassionate care.</p>
+                        <p>Dr. Smart specializes in medical dermatology, skin cancer detection and treatment, and surgical dermatology. He is committed to staying at the forefront of dermatological advances to provide his patients with the most effective treatments available.</p>
+                        <div class="credentials-list">
+                            <span class="credential-tag">Board Certified</span>
+                            <span class="credential-tag">AAD Fellow</span>
+                            <span class="credential-tag">25+ Years Experience</span>
+                            <span class="credential-tag">University of Utah Medical School</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dr. Eric Smart -->
+                <div class="team-card">
+                    <div class="team-card-image">
+                        <img src="../images/LindsaySalazar-17.jpg" alt="Dr. Eric Smart - Dermatologist in Lehi, UT">
+                    </div>
+                    <div class="team-card-content">
+                        <h3>Dr. Eric Smart, MD</h3>
+                        <p class="title">Board-Certified Dermatologist</p>
+                        <p>Dr. Eric Smart brings expertise in both medical and cosmetic dermatology. He is passionate about helping patients achieve healthy, beautiful skin through personalized treatment plans.</p>
+                        <div class="credentials-list">
+                            <span class="credential-tag">Board Certified</span>
+                            <span class="credential-tag">AAD Fellow</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Elizabeth Harding -->
+                <div class="team-card">
+                    <div class="team-card-image">
+                        <img src="../images/LindsaySalazar-21.jpg" alt="Elizabeth Harding NP-C - Nurse Practitioner in Lehi, UT">
+                    </div>
+                    <div class="team-card-content">
+                        <h3>Elizabeth Harding, NP-C</h3>
+                        <p class="title">Certified Nurse Practitioner</p>
+                        <p>Elizabeth specializes in medical dermatology and cosmetic procedures. She provides comprehensive skin care with a focus on patient education and preventive care.</p>
+                        <div class="credentials-list">
+                            <span class="credential-tag">AANP Certified</span>
+                            <span class="credential-tag">Dermatology Specialty</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carrie Jackman -->
+                <div class="team-card">
+                    <div class="team-card-image">
+                        <img src="../images/LindsaySalazar-84.jpg" alt="Carrie Jackman PA-C - Physician Assistant in Lehi, UT">
+                    </div>
+                    <div class="team-card-content">
+                        <h3>Carrie Jackman, PA-C</h3>
+                        <p class="title">Certified Physician Assistant</p>
+                        <p>Carrie has extensive experience in dermatology, treating conditions from acne to skin cancer. She is known for her thorough approach and excellent patient communication.</p>
+                        <div class="credentials-list">
+                            <span class="credential-tag">NCCPA Certified</span>
+                            <span class="credential-tag">Dermatology Focus</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lindsey Smart Smith -->
+                <div class="team-card">
+                    <div class="team-card-image">
+                        <img src="../images/LindsaySalazar-85.jpg" alt="Lindsey Smart Smith PA-C - Physician Assistant in Lehi, UT">
+                    </div>
+                    <div class="team-card-content">
+                        <h3>Lindsey Smart Smith, PA-C</h3>
+                        <p class="title">Certified Physician Assistant</p>
+                        <p>Lindsey combines her family connection to dermatology with professional expertise to deliver outstanding patient care. She specializes in both medical and cosmetic dermatology.</p>
+                        <div class="credentials-list">
+                            <span class="credential-tag">NCCPA Certified</span>
+                            <span class="credential-tag">Cosmetic Specialist</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Caitlin Brewer -->
+                <div class="team-card">
+                    <div class="team-card-image">
+                        <img src="../images/smart-skin-07.png" alt="Caitlin Brewer NP - Nurse Practitioner in Lehi, UT">
+                    </div>
+                    <div class="team-card-content">
+                        <h3>Caitlin Brewer, NP</h3>
+                        <p class="title">Nurse Practitioner</p>
+                        <p>Caitlin provides compassionate care for patients of all ages. She has a special interest in treating chronic skin conditions and helping patients develop effective skincare routines.</p>
+                        <div class="credentials-list">
+                            <span class="credential-tag">Board Certified NP</span>
+                            <span class="credential-tag">Patient Education Focus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Meet Our Team?</h2>
+            <p>Schedule your appointment today and experience the Smart Skin difference. Same-week appointments often available.</p>
+            <a href="tel:3852733376" class="btn btn-primary">Call (385) 273-3376</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="../" class="logo">
+                        <img src="../images/Asset-2.png" alt="Smart Skin Dermatology" style="height: 40px; filter: brightness(0) invert(1);">
+                    </a>
+                    <p>Board-certified dermatology care in Lehi, Utah. Serving Utah County with comprehensive skin care solutions for over 30 years.</p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../services/medical-dermatology.html">Medical Dermatology</a></li>
+                        <li><a href="../services/cosmetic-dermatology.html">Cosmetic Dermatology</a></li>
+                        <li><a href="../services/surgical-dermatology.html">Surgical Dermatology</a></li>
+                        <li><a href="../services/botox.html">Botox & Dysport</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Conditions</h4>
+                    <ul>
+                        <li><a href="../conditions/acne.html">Acne</a></li>
+                        <li><a href="../conditions/eczema.html">Eczema</a></li>
+                        <li><a href="../conditions/psoriasis.html">Psoriasis</a></li>
+                        <li><a href="../conditions/rosacea.html">Rosacea</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../about/">Our Team</a></li>
+                        <li><a href="../insurance.html">Insurance</a></li>
+                        <li><a href="../blog/">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Smart Skin Dermatology. All Rights Reserved.</span>
+                <span>3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043 | (385) 273-3376</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
