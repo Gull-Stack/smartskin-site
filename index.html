@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dermatologist in Lehi, UT | Smart Skin Dermatology</title>
-    <meta name="description" content="Board-certified dermatologists in Lehi, Utah. Dr. David Smart and team offer medical, cosmetic & surgical dermatology with 30+ years experience. Same-week appointments. Call (385) 273-3376.">
-    <meta name="keywords" content="dermatologist Lehi UT, skin doctor Utah County, dermatology clinic Lehi, skin cancer screening Utah, Botox Lehi, cosmetic dermatology Utah">
+    <title>Lehi's Top Dermatologist | Smart Skin Dermatology</title>
+    <meta name="description" content="Looking for a trusted dermatologist in Lehi, UT? Smart Skin Dermatology offers expert skin cancer screening, acne treatment & cosmetic dermatology. Book your appointment today!">
+    <meta name="keywords" content="dermatologist Lehi UT, skin doctor Utah County, dermatology clinic Lehi, skin cancer screening Utah, acne treatment Lehi, eczema specialist Utah">
     <link rel="canonical" href="https://gull-stack.github.io/smartskin-site/">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Dermatologist in Lehi, UT | Smart Skin Dermatology">
-    <meta property="og:description" content="Board-certified dermatologists in Lehi, Utah. Medical, cosmetic & surgical dermatology. 30+ years experience. Same-week appointments available.">
+    <meta property="og:title" content="Lehi's Top Dermatologist | Smart Skin Dermatology">
+    <meta property="og:description" content="Board-certified dermatologists in Lehi, Utah. Expert skin cancer screening, acne treatment & cosmetic dermatology. Same-week appointments available.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gull-stack.github.io/smartskin-site/">
     <meta property="og:image" content="https://gull-stack.github.io/smartskin-site/images/smart-skin-dermatology.jpg">
@@ -18,7 +18,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/cropped-favicon-32x32.png">
     
-    <!-- Local Business Schema -->
+    <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -26,6 +26,7 @@
         "@id": "https://gull-stack.github.io/smartskin-site/#organization",
         "name": "Smart Skin Dermatology",
         "image": "https://gull-stack.github.io/smartskin-site/images/smart-skin-dermatology.jpg",
+        "logo": "https://gull-stack.github.io/smartskin-site/images/smart-skin-07.png",
         "url": "https://gull-stack.github.io/smartskin-site/",
         "telephone": "+1-385-273-3376",
         "priceRange": "$$",
@@ -63,10 +64,17 @@
                 {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Medical Dermatology"}},
                 {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Cosmetic Dermatology"}},
                 {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Surgical Dermatology"}},
-                {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Botox Injections"}},
-                {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Skin Cancer Screening"}}
+                {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Skin Cancer Screening"}},
+                {"@type": "Offer", "itemOffered": {"@type": "MedicalProcedure", "name": "Acne Treatment"}}
             ]
-        }
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Lehi"},
+            {"@type": "City", "name": "American Fork"},
+            {"@type": "City", "name": "Saratoga Springs"},
+            {"@type": "City", "name": "Eagle Mountain"},
+            {"@type": "City", "name": "Draper"}
+        ]
     }
     </script>
     
@@ -77,6 +85,7 @@
         "@type": "Physician",
         "name": "Dr. David Smart",
         "image": "https://gull-stack.github.io/smartskin-site/images/dr-smart-1.png",
+        "description": "Board-certified dermatologist with over 30 years of experience specializing in medical, surgical, and cosmetic dermatology in Lehi, Utah.",
         "medicalSpecialty": "Dermatology",
         "memberOf": {
             "@type": "MedicalOrganization",
@@ -84,26 +93,38 @@
         },
         "worksFor": {
             "@type": "MedicalBusiness",
-            "name": "Smart Skin Dermatology"
-        }
+            "name": "Smart Skin Dermatology",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3200 W Clubhouse Dr, Ste 100",
+                "addressLocality": "Lehi",
+                "addressRegion": "UT",
+                "postalCode": "84043"
+            }
+        },
+        "availableService": [
+            {"@type": "MedicalProcedure", "name": "Skin Cancer Screening"},
+            {"@type": "MedicalProcedure", "name": "Mohs Surgery"},
+            {"@type": "MedicalProcedure", "name": "Medical Dermatology"}
+        ]
     }
     </script>
     
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --navy: #1e3a5f;
-            --navy-light: #2d5a8a;
-            --gold: #c9a227;
-            --gold-light: #dbb84d;
-            --warm-cream: #f8f6f3;
-            --text-dark: #1a1a1a;
-            --text-muted: #5a6a7a;
+            /* Smart Skin Brand Colors */
+            --primary-text: #1f424e;
+            --bg-beige: #e6e1d8;
+            --bg-cream: #fffcfa;
+            --accent: #a59988;
             --white: #ffffff;
-            --border: #e5e5e5;
+            --text-muted: #5a6a6e;
+            --border: #d4cfc5;
         }
         
         * {
@@ -113,22 +134,30 @@
         }
         
         body {
-            font-family: 'Open Sans', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.6;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-text);
+            line-height: 1.7;
+            background: var(--bg-cream);
         }
         
         h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Cormorant Garamond', serif;
             font-weight: 600;
+            line-height: 1.3;
         }
         
-        /* Top Bar */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
         .top-bar {
-            background: var(--navy);
+            background: var(--primary-text);
             color: var(--white);
             padding: 10px 0;
-            font-size: 14px;
+            font-size: 13px;
         }
         
         .top-bar .container {
@@ -140,23 +169,22 @@
         }
         
         .top-bar a {
-            color: var(--gold);
+            color: var(--bg-beige);
             text-decoration: none;
             font-weight: 500;
         }
         
         .top-bar a:hover {
-            text-decoration: underline;
+            color: var(--white);
         }
         
-        /* Header */
         header {
-            background: var(--white);
+            background: var(--bg-cream);
             padding: 15px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
             position: sticky;
             top: 0;
             z-index: 100;
+            box-shadow: 0 2px 20px rgba(31, 66, 78, 0.08);
         }
         
         header .container {
@@ -168,113 +196,92 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
             text-decoration: none;
         }
         
         .logo img {
-            height: 50px;
+            height: 60px;
             width: auto;
-        }
-        
-        .logo-text h1 {
-            font-size: 22px;
-            color: var(--navy);
-            line-height: 1.2;
-        }
-        
-        .logo-text span {
-            font-size: 11px;
-            color: var(--text-muted);
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            letter-spacing: 1px;
-            text-transform: uppercase;
         }
         
         nav ul {
             display: flex;
             list-style: none;
-            gap: 28px;
+            gap: 32px;
         }
         
         nav a {
             text-decoration: none;
-            color: var(--text-dark);
+            color: var(--primary-text);
             font-weight: 500;
-            font-size: 15px;
-            transition: color 0.2s;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
         }
         
         nav a:hover {
-            color: var(--gold);
+            color: var(--accent);
         }
         
         .btn {
             display: inline-block;
-            padding: 14px 28px;
-            border-radius: 6px;
+            padding: 14px 32px;
+            border-radius: 2px;
             font-weight: 600;
             text-decoration: none;
-            transition: all 0.2s;
-            font-size: 15px;
+            transition: all 0.3s;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
             cursor: pointer;
             border: none;
         }
         
         .btn-primary {
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            background: var(--primary-text);
             color: var(--white);
         }
         
         .btn-primary:hover {
+            background: var(--accent);
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.4);
         }
         
         .btn-outline {
-            border: 2px solid var(--gold);
-            color: var(--gold);
+            border: 2px solid var(--primary-text);
+            color: var(--primary-text);
             background: transparent;
         }
         
         .btn-outline:hover {
-            background: var(--gold);
+            background: var(--primary-text);
             color: var(--white);
         }
         
-        .btn-navy {
-            background: var(--navy);
+        .btn-accent {
+            background: var(--accent);
             color: var(--white);
         }
         
-        .btn-navy:hover {
-            background: var(--navy-light);
+        .btn-accent:hover {
+            background: var(--primary-text);
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: var(--primary-text);
+            cursor: pointer;
         }
         
         /* Hero */
         .hero {
-            background: linear-gradient(135deg, var(--warm-cream) 0%, #fff 100%);
+            background: var(--bg-beige);
             padding: 80px 0;
             position: relative;
             overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(201,162,39,0.1) 0%, transparent 70%);
-            border-radius: 50%;
         }
         
         .hero .container {
@@ -284,47 +291,24 @@
             align-items: center;
         }
         
-        .hero-content h2 {
-            font-size: 46px;
-            color: var(--navy);
-            margin-bottom: 20px;
-            line-height: 1.2;
+        .hero-content h1 {
+            font-size: 52px;
+            color: var(--primary-text);
+            margin-bottom: 24px;
+            line-height: 1.15;
         }
         
-        .hero-content h2 span {
-            color: var(--gold);
+        .hero-content h1 span {
+            color: var(--accent);
+            font-style: italic;
         }
         
         .hero-content p {
-            font-size: 18px;
+            font-size: 17px;
             color: var(--text-muted);
-            margin-bottom: 30px;
-            max-width: 500px;
-        }
-        
-        .hero-badges {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 16px;
-            background: var(--white);
-            border-radius: 50px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-            font-size: 13px;
-            font-weight: 500;
-        }
-        
-        .badge svg {
-            width: 18px;
-            height: 18px;
-            fill: var(--gold);
+            margin-bottom: 32px;
+            max-width: 480px;
+            font-weight: 400;
         }
         
         .hero-cta {
@@ -337,52 +321,50 @@
             position: relative;
         }
         
-        .hero-image-main {
+        .hero-image img {
             width: 100%;
-            max-width: 500px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            max-width: 550px;
+            border-radius: 4px;
+            box-shadow: 0 30px 80px rgba(31, 66, 78, 0.2);
         }
         
-        .hero-stats {
+        .hero-badge {
             position: absolute;
             bottom: -20px;
-            left: -30px;
+            left: -20px;
             background: var(--white);
-            padding: 20px 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            display: flex;
-            gap: 30px;
+            padding: 24px 32px;
+            border-radius: 4px;
+            box-shadow: 0 10px 40px rgba(31, 66, 78, 0.12);
         }
         
-        .stat {
-            text-align: center;
-        }
-        
-        .stat-number {
-            font-size: 26px;
+        .hero-badge .number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 42px;
             font-weight: 700;
-            color: var(--gold);
-            font-family: 'Playfair Display', serif;
+            color: var(--primary-text);
+            line-height: 1;
         }
         
-        .stat-label {
-            font-size: 11px;
-            color: var(--text-muted);
+        .hero-badge .label {
+            font-size: 12px;
+            color: var(--accent);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
+            font-weight: 600;
         }
         
-        /* Trust Bar */
-        .trust-bar {
-            background: var(--navy);
-            padding: 40px 0;
+        /* Trust Badges */
+        .trust-badges {
+            background: var(--white);
+            padding: 50px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
         }
         
-        .trust-bar .container {
+        .trust-badges .container {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             gap: 30px;
@@ -391,24 +373,45 @@
         .trust-item {
             display: flex;
             align-items: center;
-            gap: 12px;
-            color: var(--white);
+            gap: 14px;
+            flex: 1;
+            min-width: 200px;
+            justify-content: center;
         }
         
-        .trust-item svg {
-            width: 40px;
-            height: 40px;
-            fill: var(--gold);
+        .trust-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-beige);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
-        .trust-item span {
+        .trust-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--primary-text);
+        }
+        
+        .trust-text {
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
+            color: var(--primary-text);
         }
         
-        /* Services Section */
+        .trust-text span {
+            display: block;
+            font-weight: 400;
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+        
+        /* Services */
         .services {
             padding: 100px 0;
+            background: var(--bg-cream);
         }
         
         .section-header {
@@ -417,13 +420,13 @@
         }
         
         .section-header h2 {
-            font-size: 40px;
-            color: var(--navy);
+            font-size: 44px;
+            color: var(--primary-text);
             margin-bottom: 16px;
         }
         
         .section-header p {
-            font-size: 18px;
+            font-size: 16px;
             color: var(--text-muted);
             max-width: 600px;
             margin: 0 auto;
@@ -437,145 +440,75 @@
         
         .service-card {
             background: var(--white);
-            border-radius: 16px;
-            padding: 40px 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(31, 66, 78, 0.06);
             transition: all 0.3s;
             border: 1px solid var(--border);
         }
         
         .service-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-            border-color: var(--gold);
+            box-shadow: 0 20px 50px rgba(31, 66, 78, 0.12);
+            border-color: var(--accent);
         }
         
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, rgba(201,162,39,0.15), rgba(219,184,77,0.15));
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 24px;
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
         
-        .service-icon svg {
-            width: 35px;
-            height: 35px;
-            fill: var(--gold);
+        .service-card-content {
+            padding: 30px;
         }
         
         .service-card h3 {
-            font-size: 22px;
-            color: var(--navy);
+            font-size: 24px;
+            color: var(--primary-text);
             margin-bottom: 12px;
         }
         
         .service-card p {
             color: var(--text-muted);
+            font-size: 14px;
             margin-bottom: 20px;
-            font-size: 15px;
         }
         
         .service-card a {
-            color: var(--gold);
+            color: var(--accent);
             text-decoration: none;
             font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 0.5px;
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
+            transition: gap 0.3s;
         }
         
         .service-card a:hover {
-            gap: 10px;
-        }
-        
-        /* Team Section */
-        .team {
-            background: var(--warm-cream);
-            padding: 100px 0;
-        }
-        
-        .team .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-        }
-        
-        .team-image img {
-            width: 100%;
-            max-width: 450px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-        }
-        
-        .team-content h2 {
-            font-size: 40px;
-            color: var(--navy);
-            margin-bottom: 20px;
-        }
-        
-        .team-content h2 span {
-            color: var(--gold);
-        }
-        
-        .team-content .subtitle {
-            font-size: 18px;
-            color: var(--gold);
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-        
-        .team-content p {
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            font-size: 16px;
-        }
-        
-        .team-list {
-            display: flex;
-            flex-wrap: wrap;
             gap: 12px;
-            margin: 24px 0;
+            color: var(--primary-text);
         }
         
-        .team-member {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
-            background: var(--white);
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-        .team-member svg {
-            width: 18px;
-            height: 18px;
-            fill: var(--gold);
-        }
-        
-        /* Conditions Section */
+        /* Conditions */
         .conditions {
             padding: 100px 0;
+            background: var(--bg-beige);
         }
         
         .conditions-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 24px;
         }
         
         .condition-card {
             background: var(--white);
-            border-radius: 12px;
-            padding: 30px 24px;
+            border-radius: 4px;
+            padding: 40px 24px;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             border: 1px solid var(--border);
             transition: all 0.3s;
             text-decoration: none;
@@ -583,24 +516,42 @@
         
         .condition-card:hover {
             transform: translateY(-5px);
-            border-color: var(--gold);
+            box-shadow: 0 15px 40px rgba(31, 66, 78, 0.1);
+            border-color: var(--accent);
+        }
+        
+        .condition-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--bg-beige);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .condition-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--primary-text);
         }
         
         .condition-card h3 {
-            color: var(--navy);
-            font-size: 18px;
+            color: var(--primary-text);
+            font-size: 20px;
             margin-bottom: 8px;
         }
         
         .condition-card p {
             color: var(--text-muted);
-            font-size: 14px;
+            font-size: 13px;
         }
         
-        /* Location Section */
+        /* Location */
         .location {
             padding: 100px 0;
-            background: var(--warm-cream);
+            background: var(--bg-cream);
         }
         
         .location .container {
@@ -610,21 +561,28 @@
             align-items: center;
         }
         
+        .location-image img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 20px 60px rgba(31, 66, 78, 0.15);
+        }
+        
         .location-content h2 {
-            font-size: 40px;
-            color: var(--navy);
+            font-size: 44px;
+            color: var(--primary-text);
             margin-bottom: 20px;
         }
         
-        .location-content p {
+        .location-content > p {
             color: var(--text-muted);
             margin-bottom: 30px;
+            font-size: 16px;
         }
         
         .contact-info {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 24px;
         }
         
         .contact-item {
@@ -636,102 +594,156 @@
         .contact-item svg {
             width: 24px;
             height: 24px;
-            fill: var(--gold);
-            margin-top: 4px;
+            fill: var(--accent);
             flex-shrink: 0;
+            margin-top: 4px;
         }
         
         .contact-item strong {
             display: block;
-            color: var(--navy);
+            color: var(--primary-text);
             margin-bottom: 4px;
+            font-weight: 600;
         }
         
-        .contact-item span, .contact-item a {
+        .contact-item span,
+        .contact-item a {
             color: var(--text-muted);
             text-decoration: none;
+            font-size: 15px;
         }
         
         .contact-item a:hover {
-            color: var(--gold);
+            color: var(--accent);
         }
         
-        .map-container {
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        /* Team */
+        .team {
+            padding: 100px 0;
+            background: var(--bg-beige);
         }
         
-        .map-container iframe {
+        .team .container {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        
+        .team-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
+        .team-images img {
             width: 100%;
-            height: 400px;
-            border: none;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(31, 66, 78, 0.1);
+        }
+        
+        .team-images img.main-headshot {
+            grid-column: 1 / -1;
+            max-height: 350px;
+            object-fit: cover;
+            object-position: top;
+        }
+        
+        .team-content h2 {
+            font-size: 44px;
+            color: var(--primary-text);
+            margin-bottom: 20px;
+        }
+        
+        .team-content h2 span {
+            color: var(--accent);
+            font-style: italic;
+        }
+        
+        .team-content > p {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+        
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 24px 0 30px;
+        }
+        
+        .team-member-badge {
+            background: var(--white);
+            padding: 10px 18px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--primary-text);
+            border: 1px solid var(--border);
         }
         
         /* CTA Section */
         .cta {
-            background: linear-gradient(135deg, var(--navy), var(--navy-light));
+            background: var(--primary-text);
             padding: 80px 0;
             text-align: center;
         }
         
         .cta h2 {
-            font-size: 40px;
+            font-size: 44px;
             color: var(--white);
             margin-bottom: 16px;
         }
         
         .cta p {
-            color: rgba(255,255,255,0.8);
-            font-size: 18px;
-            margin-bottom: 30px;
+            color: var(--bg-beige);
+            font-size: 17px;
+            margin-bottom: 32px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
         }
         
-        .cta .btn-primary {
-            font-size: 18px;
-            padding: 18px 40px;
-        }
-        
-        .cta-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255,255,255,0.1);
-            padding: 10px 20px;
-            border-radius: 50px;
-            color: var(--gold);
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 20px;
+        .cta .btn-accent {
+            font-size: 15px;
+            padding: 18px 50px;
         }
         
         /* Footer */
         footer {
-            background: #0f2439;
+            background: #162f38;
             color: var(--white);
-            padding: 60px 0 30px;
+            padding: 70px 0 30px;
         }
         
         .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 40px;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-about img {
+            height: 50px;
+            margin-bottom: 20px;
+            filter: brightness(0) invert(1);
         }
         
         .footer-about p {
             color: rgba(255,255,255,0.7);
-            margin-top: 16px;
             font-size: 14px;
+            line-height: 1.8;
         }
         
         footer h4 {
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: var(--gold);
+            font-size: 14px;
+            margin-bottom: 24px;
+            color: var(--bg-beige);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
         }
         
         footer ul {
@@ -739,18 +751,18 @@
         }
         
         footer ul li {
-            margin-bottom: 12px;
+            margin-bottom: 14px;
         }
         
         footer ul a {
             color: rgba(255,255,255,0.7);
             text-decoration: none;
             font-size: 14px;
-            transition: color 0.2s;
+            transition: color 0.3s;
         }
         
         footer ul a:hover {
-            color: var(--gold);
+            color: var(--bg-beige);
         }
         
         .footer-bottom {
@@ -759,48 +771,73 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 14px;
+            font-size: 13px;
             color: rgba(255,255,255,0.5);
             flex-wrap: wrap;
             gap: 20px;
         }
         
-        /* Mobile Menu */
-        .mobile-menu-btn {
+        /* Mobile Sticky CTA */
+        .mobile-cta {
             display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 24px;
-            color: var(--navy);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary-text);
+            padding: 16px 20px;
+            z-index: 999;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
         }
         
-        .header-phone {
-            display: none;
+        .mobile-cta a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 16px;
+            background: var(--accent);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 4px;
         }
         
         /* Responsive */
+        @media (max-width: 1024px) {
+            .conditions-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .hero-content h1 {
+                font-size: 42px;
+            }
+        }
+        
         @media (max-width: 992px) {
             .hero .container,
-            .team .container,
-            .location .container {
+            .location .container,
+            .team .container {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
             
-            .hero-content, .team-content, .location-content {
+            .hero-content,
+            .location-content,
+            .team-content {
                 order: 1;
             }
             
-            .hero-image, .team-image {
+            .hero-image,
+            .location-image,
+            .team-images {
                 order: 2;
             }
             
-            .hero-badges, .team-list {
-                justify-content: center;
-            }
-            
-            .hero-cta {
+            .hero-cta,
+            .team-members {
                 justify-content: center;
             }
             
@@ -815,23 +852,19 @@
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
+            
+            .contact-info {
+                align-items: center;
+            }
+            
+            .contact-item {
+                text-align: left;
+            }
         }
         
         @media (max-width: 768px) {
             .mobile-menu-btn {
                 display: block;
-            }
-            
-            .header-phone {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-            }
-            
-            .header-phone a {
-                color: var(--gold);
-                font-weight: 600;
-                text-decoration: none;
             }
             
             nav {
@@ -844,19 +877,28 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                background: var(--white);
-                padding: 20px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                background: var(--bg-cream);
+                padding: 30px;
+                box-shadow: 0 20px 40px rgba(31, 66, 78, 0.1);
+                border-top: 1px solid var(--border);
             }
             
             nav.active ul {
                 flex-direction: column;
                 width: 100%;
-                gap: 16px;
+                gap: 20px;
             }
             
-            .hero-content h2 {
-                font-size: 32px;
+            .header-cta {
+                display: none;
+            }
+            
+            .hero-content h1 {
+                font-size: 36px;
+            }
+            
+            .section-header h2 {
+                font-size: 34px;
             }
             
             .services-grid,
@@ -866,19 +908,46 @@
             
             .footer-grid {
                 grid-template-columns: 1fr;
+                text-align: center;
             }
             
-            .hero-stats {
+            .hero-badge {
                 position: relative;
-                bottom: 0;
-                left: 0;
+                bottom: auto;
+                left: auto;
                 margin-top: 30px;
-                justify-content: center;
+                display: inline-block;
+            }
+            
+            .mobile-cta {
+                display: block;
+            }
+            
+            footer {
+                padding-bottom: 100px;
             }
             
             .top-bar .container {
                 justify-content: center;
                 text-align: center;
+            }
+            
+            .top-bar .container > span:first-child {
+                display: none;
+            }
+            
+            .team-images {
+                grid-template-columns: 1fr;
+            }
+            
+            .team-images img.main-headshot {
+                max-height: 300px;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            .header-cta {
+                display: inline-block;
             }
         }
     </style>
@@ -888,7 +957,7 @@
     <div class="top-bar">
         <div class="container">
             <span>📍 3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043</span>
-            <span>Call us: <a href="tel:3852733376">(385) 273-3376</a></span>
+            <span>Call for an appointment: <a href="tel:3852733376">(385) 273-3376</a></span>
         </div>
     </div>
     
@@ -896,11 +965,7 @@
     <header>
         <div class="container">
             <a href="./" class="logo">
-                <img src="images/Asset-2.png" alt="Smart Skin Dermatology Logo">
-                <div class="logo-text">
-                    <h1>Smart Skin Dermatology</h1>
-                    <span>Lehi, Utah</span>
-                </div>
+                <img src="images/smart-skin-07.png" alt="Smart Skin Dermatology Logo - Lehi Utah Dermatologist">
             </a>
             <nav id="mainNav">
                 <ul>
@@ -911,12 +976,8 @@
                     <li><a href="blog/">Blog</a></li>
                 </ul>
             </nav>
-            <div class="header-phone">
-                <a href="tel:3852733376">📞 (385) 273-3376</a>
-            </div>
-            <a href="tel:3852733376" class="btn btn-primary" style="display: none;">Book Now</a>
-            <a href="tel:3852733376" class="btn btn-primary desktop-only">Call to Book</a>
-            <button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('active')">☰</button>
+            <a href="tel:3852733376" class="btn btn-primary header-cta">Book Appointment</a>
+            <button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('active')" aria-label="Toggle navigation menu">☰</button>
         </div>
     </header>
     
@@ -924,65 +985,49 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badges">
-                    <div class="badge">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        Board Certified
-                    </div>
-                    <div class="badge">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        4.9★ Healthgrades
-                    </div>
-                    <div class="badge">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
-                        30+ Years Experience
-                    </div>
-                </div>
-                <h2>Lehi's Trusted <span>Dermatologists</span></h2>
-                <p>Expert skin care for the whole family. From skin cancer screening and surgical dermatology to cosmetic treatments that help you look and feel your best.</p>
+                <h1>Lehi's Most Trusted <span>Dermatology</span> Practice</h1>
+                <p>Expert skin care for the whole family. From comprehensive skin cancer screenings to advanced cosmetic treatments, our board-certified team delivers personalized care you can trust.</p>
                 <div class="hero-cta">
                     <a href="tel:3852733376" class="btn btn-primary">Schedule Consultation</a>
-                    <a href="tel:3852733376" class="btn btn-outline">Call (385) 273-3376</a>
+                    <a href="services/" class="btn btn-outline">View Our Services</a>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/lehi-dermatology-clinic.jpg" alt="Smart Skin Dermatology Clinic in Lehi, Utah" class="hero-image-main">
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">30+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">15K+</div>
-                        <div class="stat-label">Patients Served</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">4.9★</div>
-                        <div class="stat-label">Patient Rating</div>
-                    </div>
+                <img src="images/smart-skin-dermatology.jpg" alt="Smart Skin Dermatology clinic exterior in Lehi, Utah - Board certified dermatologists serving Utah County">
+                <div class="hero-badge">
+                    <div class="number">30+</div>
+                    <div class="label">Years Experience</div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Trust Bar -->
-    <section class="trust-bar">
+    <!-- Trust Badges -->
+    <section class="trust-badges">
         <div class="container">
             <div class="trust-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-                <span>Board Certified<br>Dermatologists</span>
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                </div>
+                <div class="trust-text">Board Certified<span>Dermatologists</span></div>
             </div>
             <div class="trust-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                <span>City Weekly<br>Best Of Utah</span>
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="trust-text">City Weekly<span>Best Of Utah</span></div>
             </div>
             <div class="trust-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                <span>Same-Week<br>Appointments</span>
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div class="trust-text">4.9 Healthgrades<span>Patient Rating</span></div>
             </div>
             <div class="trust-item">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-                <span>Most Insurance<br>Accepted</span>
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                </div>
+                <div class="trust-text">30+ Years<span>Combined Experience</span></div>
             </div>
         </div>
     </section>
@@ -991,141 +1036,94 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <h2>Comprehensive Dermatology Care</h2>
-                <p>From medical treatments to cosmetic enhancements, we provide complete skin care solutions for patients throughout Utah County and beyond.</p>
+                <h2>Our Dermatology Services</h2>
+                <p>Comprehensive skin care solutions from medical treatments to cosmetic enhancements, all under one roof.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+                    <img src="images/Asset-1.png" alt="Medical dermatology consultation at Smart Skin Dermatology in Lehi Utah">
+                    <div class="service-card-content">
+                        <h3>Medical Dermatology</h3>
+                        <p>Expert diagnosis and treatment for acne, eczema, psoriasis, rosacea, and all skin conditions affecting your health and comfort.</p>
+                        <a href="services/medical-dermatology.html">Learn More →</a>
                     </div>
-                    <h3>Medical Dermatology</h3>
-                    <p>Comprehensive treatment for acne, eczema, psoriasis, rosacea, and all skin conditions affecting your daily life and comfort.</p>
-                    <a href="services/medical-dermatology.html">Learn More →</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <img src="images/surgical-derm-1.png" alt="Surgical dermatology and skin cancer removal at Smart Skin Dermatology">
+                    <div class="service-card-content">
+                        <h3>Surgical Dermatology</h3>
+                        <p>Expert surgical removal of skin cancers, cysts, moles, and other growths with precision techniques and minimal scarring.</p>
+                        <a href="services/surgical-dermatology.html">Learn More →</a>
                     </div>
-                    <h3>Skin Cancer Screening</h3>
-                    <p>Early detection saves lives. Comprehensive skin cancer screenings and expert treatment of melanoma, basal cell, and squamous cell carcinoma.</p>
-                    <a href="services/skin-cancer.html">Learn More →</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/></svg>
+                    <img src="images/Asset-2.png" alt="Cosmetic dermatology treatments including Botox at Smart Skin Dermatology Lehi">
+                    <div class="service-card-content">
+                        <h3>Cosmetic Dermatology</h3>
+                        <p>Rejuvenate your appearance with Botox, chemical peels, microneedling, and advanced skincare for radiant, youthful skin.</p>
+                        <a href="services/cosmetic-dermatology.html">Learn More →</a>
                     </div>
-                    <h3>Surgical Dermatology</h3>
-                    <p>Expert surgical removal of skin cancers, cysts, moles, and other growths with precision techniques and minimal scarring.</p>
-                    <a href="services/surgical-dermatology.html">Learn More →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
-                    </div>
-                    <h3>Cosmetic Dermatology</h3>
-                    <p>Rejuvenate your appearance with chemical peels, microneedling, and advanced skincare treatments for radiant, youthful skin.</p>
-                    <a href="services/cosmetic-dermatology.html">Learn More →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 8L12 2.35 6.34 8A8.02 8.02 0 0 0 4 13.64c0 2 .78 4.11 2.34 5.67a7.99 7.99 0 0 0 11.32 0c1.56-1.56 2.34-3.67 2.34-5.67S19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"/></svg>
-                    </div>
-                    <h3>Botox & Dysport</h3>
-                    <p>FDA-approved wrinkle-relaxing treatments for a refreshed, natural look. Expertly administered by our experienced providers.</p>
-                    <a href="services/botox.html">Learn More →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
-                    </div>
-                    <h3>Laser Treatments</h3>
-                    <p>Advanced laser technology for hair removal, sun damage, broken blood vessels, and skin resurfacing treatments.</p>
-                    <a href="services/laser-treatments.html">Learn More →</a>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Team Section -->
-    <section class="team" id="team">
-        <div class="container">
-            <div class="team-image">
-                <img src="images/dr-smart-1.png" alt="Dr. David Smart - Board Certified Dermatologist in Lehi, Utah">
-            </div>
-            <div class="team-content">
-                <p class="subtitle">Your Dermatology Experts</p>
-                <h2>Meet Our <span>Team</span></h2>
-                <p>Smart Skin Dermatology brings together board-certified dermatologists and experienced providers with over 30 years of combined experience. We're dedicated to providing personalized, compassionate care for every patient.</p>
-                <p>Our team specializes in everything from complex skin cancer cases to cosmetic enhancements, ensuring you receive expert care under one roof.</p>
-                <div class="team-list">
-                    <div class="team-member">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        Dr. David Smart, MD
-                    </div>
-                    <div class="team-member">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        Dr. Eric Smart, MD
-                    </div>
-                    <div class="team-member">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        Elizabeth Harding, NP-C
-                    </div>
-                    <div class="team-member">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        Carrie Jackman, PA-C
-                    </div>
-                    <div class="team-member">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        Lindsey Smart Smith, PA-C
-                    </div>
-                    <div class="team-member">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        Caitlin Brewer, NP
-                    </div>
-                </div>
-                <a href="about/" class="btn btn-primary">Meet the Full Team</a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Conditions Section -->
+    <!-- Conditions We Treat -->
     <section class="conditions" id="conditions">
         <div class="container">
             <div class="section-header">
                 <h2>Conditions We Treat</h2>
-                <p>From common skin concerns to complex conditions, our team provides expert diagnosis and treatment.</p>
+                <p>From common skin concerns to complex conditions, our expert team provides comprehensive diagnosis and treatment.</p>
             </div>
             <div class="conditions-grid">
                 <a href="conditions/acne.html" class="condition-card">
-                    <h3>Acne</h3>
+                    <div class="condition-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9c.83 0 1.5-.67 1.5-1.5S7.83 8 7 8s-1.5.67-1.5 1.5S6.17 11 7 11zm10 0c.83 0 1.5-.67 1.5-1.5S17.83 8 17 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-5 0c.83 0 1.5-.67 1.5-1.5S12.83 8 12 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5z"/></svg>
+                    </div>
+                    <h3>Acne & Cysts</h3>
                     <p>Clear skin solutions for teens & adults</p>
                 </a>
                 <a href="conditions/eczema.html" class="condition-card">
-                    <h3>Eczema</h3>
+                    <div class="condition-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 8L12 2.35 6.34 8A8.02 8.02 0 0 0 4 13.64c0 2 .78 4.11 2.34 5.67a7.99 7.99 0 0 0 11.32 0c1.56-1.56 2.34-3.67 2.34-5.67S19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"/></svg>
+                    </div>
+                    <h3>Eczema & Psoriasis</h3>
                     <p>Relief from itchy, irritated skin</p>
                 </a>
-                <a href="conditions/psoriasis.html" class="condition-card">
-                    <h3>Psoriasis</h3>
-                    <p>Advanced treatments for lasting control</p>
+                <a href="conditions/rashes.html" class="condition-card">
+                    <div class="condition-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                    </div>
+                    <h3>Rashes & Discoloration</h3>
+                    <p>Diagnosis & treatment for all skin changes</p>
                 </a>
-                <a href="conditions/rosacea.html" class="condition-card">
-                    <h3>Rosacea</h3>
-                    <p>Reduce redness & restore confidence</p>
+                <a href="conditions/hair-nails.html" class="condition-card">
+                    <div class="condition-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                    <h3>Hair & Nails</h3>
+                    <p>Treatment for hair loss & nail disorders</p>
                 </a>
-            </div>
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="conditions/" class="btn btn-outline">View All Conditions →</a>
+                <a href="conditions/skin-cancer.html" class="condition-card">
+                    <div class="condition-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <h3>Skin Cancer</h3>
+                    <p>Early detection screening & expert treatment</p>
+                </a>
             </div>
         </div>
     </section>
     
-    <!-- Location Section -->
+    <!-- Visit Our Lehi Office -->
     <section class="location" id="location">
         <div class="container">
+            <div class="location-image">
+                <img src="images/lehi-dermatology-clinic.jpg" alt="Smart Skin Dermatology office building in Lehi Utah near Thanksgiving Point">
+            </div>
             <div class="location-content">
                 <h2>Visit Our Lehi Office</h2>
-                <p>Conveniently located in Lehi, Utah near the Thanksgiving Point area. We serve patients throughout Utah County including American Fork, Saratoga Springs, Eagle Mountain, and Draper.</p>
+                <p>Conveniently located near Thanksgiving Point, we serve patients throughout Utah County including American Fork, Saratoga Springs, Eagle Mountain, Pleasant Grove, and Draper.</p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
@@ -1144,17 +1142,39 @@
                     <div class="contact-item">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
                         <div>
-                            <strong>Hours</strong>
-                            <span>Mon, Tue, Thu: 8:30 AM - 5:00 PM<br>
-                            Wednesday: 7:00 AM - 5:00 PM<br>
-                            Friday: 8:30 AM - 1:00 PM</span>
+                            <strong>Office Hours</strong>
+                            <span>Mon, Tue, Thu: 8:30 AM – 5:00 PM<br>
+                            Wednesday: 7:00 AM – 5:00 PM<br>
+                            Friday: 8:30 AM – 1:00 PM</span>
                         </div>
                     </div>
                 </div>
                 <a href="tel:3852733376" class="btn btn-primary" style="margin-top: 30px;">Request Appointment</a>
             </div>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.8!2d-111.8989!3d40.4141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528a7e91c60e9d%3A0x3c0f4d5a6b5e5c5!2s3200%20W%20Clubhouse%20Dr%2C%20Lehi%2C%20UT%2084043!5e0!3m2!1sen!2sus!4v1707800000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="team-images">
+                <img src="images/dr-smart-1.png" alt="Dr. David Smart - Board Certified Dermatologist at Smart Skin Dermatology Lehi Utah" class="main-headshot">
+                <img src="images/LindsaySalazar-17.jpg" alt="Smart Skin Dermatology team member providing patient care">
+                <img src="images/LindsaySalazar-21.jpg" alt="Friendly dermatology staff at Smart Skin Dermatology clinic">
+            </div>
+            <div class="team-content">
+                <h2>Meet Your <span>Dermatology Team</span></h2>
+                <p>Smart Skin Dermatology brings together board-certified dermatologists and experienced providers with over 30 years of combined experience. We're dedicated to providing personalized, compassionate care for every patient.</p>
+                <p>Our team specializes in everything from complex skin cancer cases to cosmetic enhancements, ensuring you receive expert care under one roof.</p>
+                <div class="team-members">
+                    <span class="team-member-badge">Dr. David Smart, MD</span>
+                    <span class="team-member-badge">Dr. Eric Smart, MD</span>
+                    <span class="team-member-badge">Elizabeth Harding, NP-C</span>
+                    <span class="team-member-badge">Carrie Jackman, PA-C</span>
+                    <span class="team-member-badge">Lindsey Smart Smith, PA-C</span>
+                    <span class="team-member-badge">Caitlin Brewer, NP</span>
+                </div>
+                <a href="about/" class="btn btn-primary">Meet the Full Team</a>
             </div>
         </div>
     </section>
@@ -1162,10 +1182,9 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <div class="cta-badge">✨ Same-Week Appointments Available</div>
             <h2>Ready to Schedule Your Visit?</h2>
-            <p>Whether you need a skin cancer screening, cosmetic consultation, or treatment for a skin condition, our expert team is here to help.</p>
-            <a href="tel:3852733376" class="btn btn-primary">Call (385) 273-3376 Today</a>
+            <p>Same-week appointments available. Whether you need a skin cancer screening, treatment for a skin condition, or cosmetic consultation, our expert team is here to help.</p>
+            <a href="tel:3852733376" class="btn btn-accent">Call (385) 273-3376</a>
         </div>
     </section>
     
@@ -1174,13 +1193,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <a href="./" class="logo">
-                        <img src="images/Asset-2.png" alt="Smart Skin Dermatology" style="height: 40px; filter: brightness(0) invert(1);">
-                        <div class="logo-text">
-                            <h1 style="font-size: 18px; color: white;">Smart Skin Dermatology</h1>
-                        </div>
-                    </a>
-                    <p>Board-certified dermatology care in Lehi, Utah. Serving Utah County with comprehensive skin care solutions for over 30 years.</p>
+                    <img src="images/smart-skin-07.png" alt="Smart Skin Dermatology Logo">
+                    <p>Board-certified dermatology care in Lehi, Utah. Serving Utah County families with comprehensive skin care solutions for over 30 years. Medical, surgical, and cosmetic dermatology experts.</p>
                 </div>
                 <div>
                     <h4>Services</h4>
@@ -1188,18 +1202,18 @@
                         <li><a href="services/medical-dermatology.html">Medical Dermatology</a></li>
                         <li><a href="services/cosmetic-dermatology.html">Cosmetic Dermatology</a></li>
                         <li><a href="services/surgical-dermatology.html">Surgical Dermatology</a></li>
-                        <li><a href="services/botox.html">Botox & Dysport</a></li>
                         <li><a href="services/skin-cancer.html">Skin Cancer Screening</a></li>
-                        <li><a href="services/laser-treatments.html">Laser Treatments</a></li>
+                        <li><a href="services/botox.html">Botox & Dysport</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4>Conditions</h4>
                     <ul>
-                        <li><a href="conditions/acne.html">Acne Treatment</a></li>
-                        <li><a href="conditions/eczema.html">Eczema Care</a></li>
-                        <li><a href="conditions/psoriasis.html">Psoriasis</a></li>
-                        <li><a href="conditions/rosacea.html">Rosacea</a></li>
+                        <li><a href="conditions/acne.html">Acne & Cysts</a></li>
+                        <li><a href="conditions/eczema.html">Eczema & Psoriasis</a></li>
+                        <li><a href="conditions/rashes.html">Rashes & Discoloration</a></li>
+                        <li><a href="conditions/hair-nails.html">Hair & Nails</a></li>
+                        <li><a href="conditions/skin-cancer.html">Skin Cancer</a></li>
                     </ul>
                 </div>
                 <div>
@@ -1207,25 +1221,22 @@
                     <ul>
                         <li><a href="about/">Our Team</a></li>
                         <li><a href="insurance.html">Insurance</a></li>
-                        <li><a href="blog/">Blog</a></li>
+                        <li><a href="blog/">Health Blog</a></li>
                         <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <span>© 2026 Smart Skin Dermatology. All Rights Reserved.</span>
-                <span>3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043 | (385) 273-3376</span>
+                <span>3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043 · (385) 273-3376</span>
             </div>
         </div>
     </footer>
     
-    <style>
-        @media (min-width: 769px) {
-            .desktop-only { display: inline-block; }
-        }
-        @media (max-width: 768px) {
-            .desktop-only { display: none !important; }
-        }
-    </style>
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-cta">
+        <a href="tel:3852733376">📞 Call to Book Appointment</a>
+    </div>
 </body>
 </html>
