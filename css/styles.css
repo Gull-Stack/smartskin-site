@@ -372,6 +372,18 @@ nav a:hover {
     fill: var(--primary-text);
 }
 
+.trust-badge-img {
+    max-height: 70px;
+    width: auto;
+    object-fit: contain;
+    filter: none;
+    transition: transform 0.2s ease;
+}
+
+.trust-badge-img:hover {
+    transform: scale(1.05);
+}
+
 .trust-text {
     font-size: 14px;
     font-weight: 600;
