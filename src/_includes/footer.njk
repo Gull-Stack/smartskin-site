@@ -1,0 +1,62 @@
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Schedule Your Visit?</h2>
+        <p>Same-week appointments available. Whether you need a skin cancer screening, treatment for a skin condition, or cosmetic consultation, our expert team is here to help.</p>
+        <a href="tel:{{ site.phoneRaw }}" class="btn btn-accent">Call {{ site.phone }}</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="/images/smart-skin-07.png" alt="{{ site.name }} Logo">
+                    <span class="logo-text">
+                        <span class="logo-name">Smart Skin</span>
+                        <span class="logo-tagline">Dermatology</span>
+                    </span>
+                </div>
+                <p>Board-certified dermatology care in Lehi, Utah. Serving Utah County families with comprehensive skin care solutions for over 30 years. Medical, surgical, and cosmetic dermatology experts.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/services/medical-dermatology/">Medical Dermatology</a></li>
+                    <li><a href="/services/cosmetic-dermatology/">Cosmetic Dermatology</a></li>
+                    <li><a href="/services/surgical-dermatology/">Surgical Dermatology</a></li>
+                    <li><a href="/services/skin-cancer/">Skin Cancer Screening</a></li>
+                    <li><a href="/services/botox/">Botox & Dysport</a></li>
+                    <li><a href="/services/acne/">Acne Treatment</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Conditions</h4>
+                <ul>
+                    <li><a href="/conditions/acne/">Acne & Cysts</a></li>
+                    <li><a href="/conditions/eczema/">Eczema & Psoriasis</a></li>
+                    <li><a href="/conditions/rashes/">Rashes & Discoloration</a></li>
+                    <li><a href="/conditions/hair-nails/">Hair & Nails</a></li>
+                    <li><a href="/conditions/skin-cancer/">Skin Cancer</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/about/">Our Team</a></li>
+                    <li><a href="/insurance/">Insurance</a></li>
+                    <li><a href="/blog/">Health Blog</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/contact/">Contact Us</a></li>
+                    <li><a href="/privacy/">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© {{ "now" | date("%Y") }} {{ site.name }}. All Rights Reserved.</span>
+            <span>{{ site.address.full }} · {{ site.phone }}</span>
+        </div>
+    </div>
+</footer>

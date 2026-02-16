@@ -1,0 +1,172 @@
+---
+layout: base.njk
+title: Contact Us & Book Appointment
+description: Contact Smart Skin Dermatology in Lehi, Utah. Call (385) 273-3376 or submit our online form. Same-week appointments available.
+---
+
+<section class="page-header">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/">Home</a><span>/</span><span>Contact</span>
+        </div>
+        <h1>Contact Us</h1>
+        <p>Ready to schedule an appointment? We're here to help with all your dermatology needs.</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="booking-methods">
+                <h2>Ways to Reach Us</h2>
+                <div class="booking-cards">
+                    <a href="tel:{{ site.phoneRaw }}" class="booking-card">
+                        <div class="booking-card-icon">📞</div>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>Speak with our friendly staff</p>
+                            <span>{{ site.phone }}</span>
+                        </div>
+                    </a>
+                    <div class="booking-card">
+                        <div class="booking-card-icon">📍</div>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>{{ site.address.street }}</p>
+                            <span>{{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" action="/api/contact" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(385) 555-1234">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="Skin Cancer Screening">Skin Cancer Screening</option>
+                            <option value="Acne Treatment">Acne Treatment</option>
+                            <option value="Eczema/Psoriasis">Eczema/Psoriasis</option>
+                            <option value="Medical Dermatology">Medical Dermatology</option>
+                            <option value="Cosmetic Dermatology">Cosmetic Dermatology</option>
+                            <option value="Surgical Dermatology">Surgical Dermatology</option>
+                            <option value="Botox/Fillers">Botox/Fillers</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="office-info">
+    <div class="container">
+        <div class="office-grid">
+            <div class="office-details">
+                <h2>Office Information</h2>
+                <div class="office-item">
+                    <div class="office-item-icon">📍</div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>{{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</p>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="office-item-icon">📞</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:{{ site.phoneRaw }}">{{ site.phone }}</a></p>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="office-item-icon">🕐</div>
+                    <div>
+                        <h4>Office Hours</h4>
+                        <table class="hours-table">
+                            <tr><td>Monday</td><td>{{ site.hours.monday }}</td></tr>
+                            <tr><td>Tuesday</td><td>{{ site.hours.tuesday }}</td></tr>
+                            <tr><td>Wednesday</td><td>{{ site.hours.wednesday }}</td></tr>
+                            <tr><td>Thursday</td><td>{{ site.hours.thursday }}</td></tr>
+                            <tr><td>Friday</td><td>{{ site.hours.friday }}</td></tr>
+                            <tr><td>Sat - Sun</td><td>Closed</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5!2d-111.8989!3d{{ site.geo.lat }}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s{{ site.address.street | urlencode }}%2C%20{{ site.address.city }}%2C%20{{ site.address.state }}!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const statusDiv = document.getElementById('formStatus');
+    
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    statusDiv.className = 'form-status';
+    statusDiv.style.display = 'none';
+    
+    const formData = {
+        name: form.name.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        service: form.service.value,
+        message: form.message.value
+    };
+    
+    try {
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
+        
+        const result = await response.json();
+        
+        if (response.ok) {
+            statusDiv.className = 'form-status success';
+            statusDiv.textContent = result.message;
+            form.reset();
+        } else {
+            statusDiv.className = 'form-status error';
+            statusDiv.textContent = result.error || 'Something went wrong. Please try again.';
+        }
+    } catch (error) {
+        statusDiv.className = 'form-status error';
+        statusDiv.textContent = 'Network error. Please call us directly at {{ site.phone }}.';
+    }
+    
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+});
+</script>

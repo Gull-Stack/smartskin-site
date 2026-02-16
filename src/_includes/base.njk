@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | {{ site.name }}</title>
+    <meta name="description" content="{{ description or 'Board-certified dermatology care in Lehi, Utah. Expert skin cancer screening, acne treatment & cosmetic dermatology.' }}">
+    {% if noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ title }} | {{ site.name }}">
+    <meta property="og:description" content="{{ description or site.tagline }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/images/smart-skin-dermatology.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/cropped-favicon-32x32.png">
+    
+    {% block schema %}{% endblock %}
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    {% include "header.njk" %}
+    
+    {% block content %}
+    {{ content | safe }}
+    {% endblock %}
+    
+    {% include "footer.njk" %}
+    
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-cta">
+        <a href="tel:{{ site.phoneRaw }}">📞 Call to Book Appointment</a>
+    </div>
+</body>
+</html>

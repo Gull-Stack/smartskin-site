@@ -1,0 +1,51 @@
+{
+  "name": "Smart Skin Dermatology",
+  "tagline": "Board-Certified Dermatology in Lehi, Utah",
+  "url": "https://smartskindermatology.com",
+  "phone": "(385) 273-3376",
+  "phoneRaw": "3852733376",
+  "email": "info@smartskindermatology.com",
+  "address": {
+    "street": "3200 W Clubhouse Dr, Ste 100",
+    "city": "Lehi",
+    "state": "UT",
+    "zip": "84043",
+    "full": "3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043"
+  },
+  "hours": {
+    "monday": "8:30 AM – 5:00 PM",
+    "tuesday": "8:30 AM – 5:00 PM",
+    "wednesday": "7:00 AM – 5:00 PM",
+    "thursday": "8:30 AM – 5:00 PM",
+    "friday": "8:30 AM – 1:00 PM",
+    "saturday": "Closed",
+    "sunday": "Closed"
+  },
+  "doctor": {
+    "name": "Dr. David Smart",
+    "credentials": "MD",
+    "specialty": "Board-Certified Dermatologist"
+  },
+  "team": [
+    { "name": "Dr. David Smart", "credentials": "MD" },
+    { "name": "Dr. Eric Smart", "credentials": "MD" },
+    { "name": "Elizabeth Harding", "credentials": "NP-C" },
+    { "name": "Carrie Jackman", "credentials": "PA-C" },
+    { "name": "Lindsey Smart Smith", "credentials": "PA-C" },
+    { "name": "Caitlin Brewer", "credentials": "NP" }
+  ],
+  "colors": {
+    "teal": "#1f424e",
+    "beige": "#e6e1d8",
+    "cream": "#fffcfa",
+    "taupe": "#a59988"
+  },
+  "social": {
+    "facebook": "",
+    "instagram": ""
+  },
+  "geo": {
+    "lat": 40.4141,
+    "lng": -111.8989
+  }
+}

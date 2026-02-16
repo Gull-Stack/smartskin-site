@@ -1,0 +1,31 @@
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="container">
+        <span>📍 {{ site.address.full }}</span>
+        <span>Call for an appointment: <a href="tel:{{ site.phoneRaw }}">{{ site.phone }}</a></span>
+    </div>
+</div>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="/images/smart-skin-07.png" alt="{{ site.name }} Logo">
+            <span class="logo-text">
+                <span class="logo-name">Smart Skin</span>
+                <span class="logo-tagline">Dermatology</span>
+            </span>
+        </a>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="/about/">Our Team</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/conditions/">Conditions</a></li>
+                <li><a href="/insurance/">Insurance</a></li>
+                <li><a href="/blog/">Blog</a></li>
+            </ul>
+        </nav>
+        <a href="tel:{{ site.phoneRaw }}" class="btn btn-primary header-cta">Book Appointment</a>
+        <button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('active')" aria-label="Toggle navigation menu">☰</button>
+    </div>
+</header>

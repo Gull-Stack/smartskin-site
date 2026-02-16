@@ -1,0 +1,16 @@
+{
+  "name": "smartskin-site",
+  "version": "1.0.0",
+  "description": "Smart Skin Dermatology - Lehi, Utah",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.0"
+  }
+}
