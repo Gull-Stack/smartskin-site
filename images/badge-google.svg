@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect width="200" height="80" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="100" y="28" text-anchor="middle" fill="#f4b223" font-family="Arial, sans-serif" font-size="16">★★★★★</text>
+  <text x="100" y="48" text-anchor="middle" fill="#1f424e" font-family="Georgia, serif" font-size="18" font-weight="700">4.9</text>
+  <text x="100" y="66" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="10">800+ Google Reviews</text>
+</svg>

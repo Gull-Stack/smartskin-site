@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect width="200" height="80" rx="8" fill="#1a3a5c"/>
+  <text x="100" y="26" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="11" font-weight="600">U.S. NEWS</text>
+  <text x="100" y="48" text-anchor="middle" fill="#f4b223" font-family="Georgia, serif" font-size="20" font-weight="700">5/5</text>
+  <text x="100" y="66" text-anchor="middle" fill="#a59988" font-family="Arial, sans-serif" font-size="10">Patient Experience</text>
+</svg>

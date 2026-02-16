@@ -520,7 +520,7 @@ nav a:hover::after {
    ============================================ */
 .awards-bar {
     background: var(--white);
-    padding: 30px 0;
+    padding: 40px 0;
     border-bottom: 1px solid var(--border);
     overflow: hidden;
 }
@@ -529,21 +529,31 @@ nav a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .award-item {
     display: flex;
     align-items: center;
-    gap: 15px;
-    opacity: 0.9;
+    justify-content: center;
     transition: all 0.3s var(--ease-smooth);
 }
 
 .award-item:hover {
-    opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.08);
+}
+
+.award-badge-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(31, 66, 78, 0.1));
+    transition: all 0.3s var(--ease-smooth);
+}
+
+.award-badge-img:hover {
+    filter: drop-shadow(0 4px 15px rgba(31, 66, 78, 0.2));
 }
 
 .award-icon {
@@ -816,21 +826,31 @@ nav a:hover::after {
 }
 
 .condition-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, var(--bg-beige), var(--bg-cream));
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
     transition: all 0.4s var(--ease-smooth);
-    box-shadow: 0 4px 15px rgba(31, 66, 78, 0.08);
+    overflow: hidden;
+}
+
+.condition-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s var(--ease-smooth);
 }
 
 .condition-card:hover .condition-icon {
-    background: var(--primary-text);
     transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(31, 66, 78, 0.15);
+}
+
+.condition-card:hover .condition-icon img {
+    transform: scale(1.05);
 }
 
 .condition-icon svg {

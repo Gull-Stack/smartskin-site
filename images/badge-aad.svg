@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect width="200" height="80" rx="8" fill="#1f424e"/>
+  <text x="100" y="32" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="14" font-weight="600">BOARD CERTIFIED</text>
+  <text x="100" y="52" text-anchor="middle" fill="#a59988" font-family="Arial, sans-serif" font-size="10">American Academy of</text>
+  <text x="100" y="66" text-anchor="middle" fill="#a59988" font-family="Arial, sans-serif" font-size="10">Dermatology</text>
+</svg>
