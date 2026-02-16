@@ -361,6 +361,21 @@ nav a:hover::after {
     object-fit: cover;
 }
 
+.hero-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Hide fallback when video plays */
+.hero-video-container video:not([src=""]) + .hero-fallback {
+    display: none;
+}
+
 .hero-overlay {
     position: absolute;
     top: 0;

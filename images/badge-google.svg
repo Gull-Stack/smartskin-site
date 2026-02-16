@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
-  <rect width="200" height="80" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
-  <text x="100" y="28" text-anchor="middle" fill="#f4b223" font-family="Arial, sans-serif" font-size="16">★★★★★</text>
-  <text x="100" y="48" text-anchor="middle" fill="#1f424e" font-family="Georgia, serif" font-size="18" font-weight="700">4.9</text>
-  <text x="100" y="66" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="10">800+ Google Reviews</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 70">
+  <rect width="150" height="70" rx="6" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <circle cx="30" cy="35" r="18" fill="#4285f4"/>
+  <text x="30" y="41" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="16" font-weight="700">G</text>
+  <text x="95" y="28" text-anchor="middle" fill="#f4b223" font-family="Arial, sans-serif" font-size="12">★★★★★</text>
+  <text x="95" y="45" text-anchor="middle" fill="#1a1a1a" font-family="Georgia, serif" font-size="18" font-weight="700">4.9</text>
+  <text x="95" y="60" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">800+ Reviews</text>
 </svg>

@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
-  <rect width="200" height="80" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
-  <text x="100" y="26" text-anchor="middle" fill="#00a19a" font-family="Arial, sans-serif" font-size="12" font-weight="700">HEALTHGRADES</text>
-  <text x="100" y="50" text-anchor="middle" fill="#f4b223" font-family="Arial, sans-serif" font-size="14">★★★★★</text>
-  <text x="100" y="68" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="10">4.8 Rating</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 70">
+  <rect width="150" height="70" rx="6" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="10" y="15" width="40" height="40" rx="20" fill="#00a19a"/>
+  <path d="M22 35 L28 41 L38 28" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="26" text-anchor="middle" fill="#00a19a" font-family="Arial, sans-serif" font-size="10" font-weight="700">HEALTHGRADES</text>
+  <text x="100" y="44" text-anchor="middle" fill="#f4b223" font-family="Arial, sans-serif" font-size="12">★★★★★</text>
+  <text x="100" y="58" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="10">Top Rated 2024</text>
 </svg>
