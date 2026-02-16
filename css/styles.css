@@ -1275,9 +1275,11 @@ nav a:hover::after {
 
 .team-images img.main-headshot {
     grid-column: 1 / -1;
-    max-height: 350px;
-    object-fit: cover;
-    object-position: top;
+    max-height: 450px;
+    object-fit: contain;
+    object-position: center;
+    background: var(--bg-beige);
+    padding: 0;
 }
 
 .team-content h2 {
