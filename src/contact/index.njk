@@ -42,6 +42,8 @@ description: Contact Smart Skin Dermatology in Lehi, Utah. Call (385) 273-3376 o
             <div class="contact-form">
                 <h2>Send Us a Message</h2>
                 <form id="contactForm" action="/api/contact" method="POST">
+                    <!-- Honeypot - bots fill this, humans don't see it -->
+                    <input type="text" name="fax_number" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name *</label>

@@ -1,4 +1,7 @@
 module.exports = function(eleventyConfig) {
+  // Support pathPrefix from environment (for GitHub Pages)
+  const pathPrefix = process.env.PATH_PREFIX || "/";
+  
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
@@ -18,6 +21,7 @@ module.exports = function(eleventyConfig) {
   });
   
   return {
+    pathPrefix: pathPrefix,
     dir: {
       input: "src",
       output: "_site",

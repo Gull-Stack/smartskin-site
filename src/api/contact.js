@@ -18,7 +18,16 @@ module.exports = async (req, res) => {
   sgMail.setApiKey(apiKey);
 
   // Extract form data
-  const { name, email, phone, service, message } = req.body;
+  const { name, email, phone, service, message, fax_number } = req.body;
+
+  // Honeypot check - if filled, it's a bot
+  if (fax_number) {
+    // Silently accept but don't process (don't tip off bots)
+    return res.status(200).json({ 
+      success: true, 
+      message: 'Thank you! Your message has been sent successfully.' 
+    });
+  }
 
   // Validate required fields
   if (!name || !email || !message) {
