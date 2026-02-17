@@ -270,7 +270,7 @@ nav a:hover {
     padding: 100px 0;
     overflow: hidden;
     background: linear-gradient(135deg, rgba(31, 66, 78, 0.85) 0%, rgba(31, 66, 78, 0.75) 100%),
-                url('/images/smart-skin-dermatology.jpg');
+                url('../images/smart-skin-dermatology.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1853,3 +1853,45 @@ footer ul a:hover {
         display: inline-block;
     }
 }
+
+/* ============================================
+   Scroll Reveal Animations
+   ============================================ */
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal {
+    transform: translateY(40px);
+}
+
+.reveal-left {
+    transform: translateX(-40px);
+}
+
+.reveal-right {
+    transform: translateX(40px);
+}
+
+.reveal-scale {
+    transform: scale(0.9);
+}
+
+.reveal.active,
+.reveal-left.active,
+.reveal-right.active,
+.reveal-scale.active {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Stagger delays */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
