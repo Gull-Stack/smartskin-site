@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us &amp; Book Appointment | Smart Skin Dermatology</title>
+    <meta name="description" content="Contact Smart Skin Dermatology in Lehi, Utah. Call (385) 273-3376 or submit our online form. Same-week appointments available.">
+    
+    <link rel="canonical" href="https://smartskindermatology.com/contact/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact Us &amp; Book Appointment | Smart Skin Dermatology">
+    <meta property="og:description" content="Contact Smart Skin Dermatology in Lehi, Utah. Call (385) 273-3376 or submit our online form. Same-week appointments available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartskindermatology.com/contact/">
+    <meta property="og:image" content="https://smartskindermatology.com/images/smart-skin-dermatology.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/smartskin-site/images/cropped-favicon-32x32.png">
+    
+    
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/smartskin-site/css/styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+<div class="top-bar">
+    <div class="container">
+        <span>📍 3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043</span>
+        <span>Call for an appointment: <a href="tel:3852733376">(385) 273-3376</a></span>
+    </div>
+</div>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <a href="/smartskin-site/" class="logo">
+            <img src="/smartskin-site/images/smart-skin-07.png" alt="Smart Skin Dermatology Logo">
+            <span class="logo-text">
+                <span class="logo-name">Smart Skin</span>
+                <span class="logo-tagline">Dermatology</span>
+            </span>
+        </a>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="/smartskin-site/about/">Our Team</a></li>
+                <li><a href="/smartskin-site/services/">Services</a></li>
+                <li><a href="/smartskin-site/conditions/">Conditions</a></li>
+                <li><a href="/smartskin-site/insurance/">Insurance</a></li>
+                <li><a href="/smartskin-site/blog/">Blog</a></li>
+            </ul>
+        </nav>
+        <a href="tel:3852733376" class="btn btn-primary header-cta">Book Appointment</a>
+        <button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('active')" aria-label="Toggle navigation menu">☰</button>
+    </div>
+</header>
+
+    
+    
+    
+<section class="page-header">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="/smartskin-site/">Home</a><span>/</span><span>Contact</span>
+        </div>
+        <h1>Contact Us</h1>
+        <p>Ready to schedule an appointment? We're here to help with all your dermatology needs.</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="booking-methods">
+                <h2>Ways to Reach Us</h2>
+                <div class="booking-cards">
+                    <a href="tel:3852733376" class="booking-card">
+                        <div class="booking-card-icon">📞</div>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>Speak with our friendly staff</p>
+                            <span>(385) 273-3376</span>
+                        </div>
+                    </a>
+                    <div class="booking-card">
+                        <div class="booking-card-icon">📍</div>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>3200 W Clubhouse Dr, Ste 100</p>
+                            <span>Lehi, UT 84043</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" action="/api/contact" method="POST">
+                    <!-- Honeypot - bots fill this, humans don't see it -->
+                    <input type="text" name="fax_number" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+                    <!-- Timestamp token (bot detection) -->
+                    <input type="hidden" name="_timestamp" id="_timestamp" value="">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(385) 555-1234">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="Skin Cancer Screening">Skin Cancer Screening</option>
+                            <option value="Acne Treatment">Acne Treatment</option>
+                            <option value="Eczema/Psoriasis">Eczema/Psoriasis</option>
+                            <option value="Medical Dermatology">Medical Dermatology</option>
+                            <option value="Cosmetic Dermatology">Cosmetic Dermatology</option>
+                            <option value="Surgical Dermatology">Surgical Dermatology</option>
+                            <option value="Botox/Fillers">Botox/Fillers</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="office-info">
+    <div class="container">
+        <div class="office-grid">
+            <div class="office-details">
+                <h2>Office Information</h2>
+                <div class="office-item">
+                    <div class="office-item-icon">📍</div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>3200 W Clubhouse Dr, Ste 100<br>Lehi, UT 84043</p>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="office-item-icon">📞</div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:3852733376">(385) 273-3376</a></p>
+                    </div>
+                </div>
+                <div class="office-item">
+                    <div class="office-item-icon">🕐</div>
+                    <div>
+                        <h4>Office Hours</h4>
+                        <table class="hours-table">
+                            <tr><td>Monday</td><td>8:30 AM – 5:00 PM</td></tr>
+                            <tr><td>Tuesday</td><td>8:30 AM – 5:00 PM</td></tr>
+                            <tr><td>Wednesday</td><td>7:00 AM – 5:00 PM</td></tr>
+                            <tr><td>Thursday</td><td>8:30 AM – 5:00 PM</td></tr>
+                            <tr><td>Friday</td><td>8:30 AM – 1:00 PM</td></tr>
+                            <tr><td>Sat - Sun</td><td>Closed</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5!2d-111.8989!3d40.4141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s3200%20W%20Clubhouse%20Dr%2C%20Ste%20100%2C%20Lehi%2C%20UT!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const statusDiv = document.getElementById('formStatus');
+    
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    statusDiv.className = 'form-status';
+    statusDiv.style.display = 'none';
+    
+    const formData = {
+        name: form.name.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        service: form.service.value,
+        message: form.message.value,
+        fax_number: form.fax_number.value,
+        _timestamp: form._timestamp.value
+    };
+    
+    try {
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
+        
+        const result = await response.json();
+        
+        if (response.ok) {
+            statusDiv.className = 'form-status success';
+            statusDiv.textContent = result.message;
+            form.reset();
+        } else {
+            statusDiv.className = 'form-status error';
+            statusDiv.textContent = result.error || 'Something went wrong. Please try again.';
+        }
+    } catch (error) {
+        statusDiv.className = 'form-status error';
+        statusDiv.textContent = 'Network error. Please call us directly at (385) 273-3376.';
+    }
+    
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+});
+
+// Set timestamp on page load (bots that submit too fast get blocked)
+document.getElementById('_timestamp').value = Date.now();
+</script>
+
+    
+    
+    <!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Schedule Your Visit?</h2>
+        <p>Same-week appointments available. Whether you need a skin cancer screening, treatment for a skin condition, or cosmetic consultation, our expert team is here to help.</p>
+        <a href="tel:3852733376" class="btn btn-accent">Call (385) 273-3376</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="/smartskin-site/images/smart-skin-07.png" alt="Smart Skin Dermatology Logo">
+                    <span class="logo-text">
+                        <span class="logo-name">Smart Skin</span>
+                        <span class="logo-tagline">Dermatology</span>
+                    </span>
+                </div>
+                <p>Board-certified dermatology care in Lehi, Utah. Serving Utah County families with comprehensive skin care solutions for over 30 years. Medical, surgical, and cosmetic dermatology experts.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/smartskin-site/services/medical-dermatology/">Medical Dermatology</a></li>
+                    <li><a href="/smartskin-site/services/cosmetic-dermatology/">Cosmetic Dermatology</a></li>
+                    <li><a href="/smartskin-site/services/surgical-dermatology/">Surgical Dermatology</a></li>
+                    <li><a href="/smartskin-site/services/skin-cancer/">Skin Cancer Screening</a></li>
+                    <li><a href="/smartskin-site/services/botox/">Botox & Dysport</a></li>
+                    <li><a href="/smartskin-site/services/acne/">Acne Treatment</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Conditions</h4>
+                <ul>
+                    <li><a href="/smartskin-site/conditions/acne/">Acne & Cysts</a></li>
+                    <li><a href="/smartskin-site/conditions/eczema/">Eczema & Psoriasis</a></li>
+                    <li><a href="/smartskin-site/conditions/rashes/">Rashes & Discoloration</a></li>
+                    <li><a href="/smartskin-site/conditions/hair-nails/">Hair & Nails</a></li>
+                    <li><a href="/smartskin-site/conditions/skin-cancer/">Skin Cancer</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/smartskin-site/about/">Our Team</a></li>
+                    <li><a href="/smartskin-site/insurance/">Insurance</a></li>
+                    <li><a href="/smartskin-site/blog/">Health Blog</a></li>
+                    <li><a href="/smartskin-site/faq/">FAQ</a></li>
+                    <li><a href="/smartskin-site/contact/">Contact Us</a></li>
+                    <li><a href="/smartskin-site/privacy/">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Smart Skin Dermatology. All Rights Reserved.</span>
+            <span>3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043 · (385) 273-3376</span>
+        </div>
+    </div>
+</footer>
+
+    
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-cta">
+        <a href="tel:3852733376">📞 Call to Book Appointment</a>
+    </div>
+</body>
+</html>
