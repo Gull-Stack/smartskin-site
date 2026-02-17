@@ -3,13 +3,35 @@
 
 const sgMail = require('@sendgrid/mail');
 
+// === SPAM PROTECTION ===
+function isGibberish(text) {
+  if (!text || text.length < 2) return false;
+  const cleaned = text.toLowerCase().replace(/[^a-z]/g, '');
+  if (cleaned.length < 2) return false;
+  const vowels = cleaned.match(/[aeiou]/g);
+  if (!vowels || vowels.length < cleaned.length * 0.15) return true;
+  if (/[^aeiou]{5,}/i.test(cleaned)) return true;
+  return false;
+}
+
+function looksLikeSpam(data) {
+  const { name, fax_number, _timestamp } = data;
+  if (fax_number) return 'honeypot';
+  if (_timestamp) {
+    const elapsed = Date.now() - parseInt(_timestamp, 10);
+    if (elapsed < 3000) return 'too_fast';
+  }
+  if (isGibberish(name)) return 'gibberish_name';
+  if (name && name.trim().length < 2) return 'short_name';
+  return false;
+}
+// === END SPAM PROTECTION ===
+
 module.exports = async (req, res) => {
-  // Only allow POST requests
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // Initialize SendGrid with API key from environment
   const apiKey = process.env.SENDGRID_API_KEY;
   if (!apiKey) {
     console.error('SENDGRID_API_KEY not configured');
@@ -17,42 +39,33 @@ module.exports = async (req, res) => {
   }
   sgMail.setApiKey(apiKey);
 
-  // Extract form data
-  const { name, email, phone, service, message, fax_number } = req.body;
+  const { name, email, phone, service, message, fax_number, _timestamp } = req.body;
 
-  // Honeypot check - if filled, it's a bot
-  if (fax_number) {
-    // Silently accept but don't process (don't tip off bots)
-    return res.status(200).json({ 
-      success: true, 
-      message: 'Thank you! Your message has been sent successfully.' 
-    });
+  // === SPAM CHECK ===
+  const spamReason = looksLikeSpam({ name, fax_number, _timestamp });
+  if (spamReason) {
+    console.log(`[SPAM BLOCKED] reason=${spamReason} name="${name}" email="${email}"`);
+    return res.status(200).json({ success: true, message: 'Thank you! Your message has been sent successfully.' });
   }
+  // === END SPAM CHECK ===
 
-  // Validate required fields
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'Name, email, and message are required' });
   }
 
-  // Email validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     return res.status(400).json({ error: 'Invalid email address' });
   }
 
-  // Business contact info
   const businessEmail = 'info@smartskindermatology.com';
   const businessName = 'Smart Skin Dermatology';
   const businessPhone = '(385) 273-3376';
 
   try {
-    // 1. Send notification to business
     const businessNotification = {
       to: businessEmail,
-      from: {
-        email: 'noreply@smartskindermatology.com',
-        name: businessName
-      },
+      from: { email: 'noreply@smartskindermatology.com', name: businessName },
       replyTo: email,
       subject: `New Contact Form Submission - ${service || 'General Inquiry'}`,
       html: `
@@ -69,13 +82,9 @@ module.exports = async (req, res) => {
       `
     };
 
-    // 2. Send auto-reply to the lead
     const autoReply = {
       to: email,
-      from: {
-        email: 'noreply@smartskindermatology.com',
-        name: businessName
-      },
+      from: { email: 'noreply@smartskindermatology.com', name: businessName },
       subject: 'Thank You for Contacting Smart Skin Dermatology',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -92,16 +101,9 @@ module.exports = async (req, res) => {
               <p><strong>Message:</strong><br>${message.replace(/\n/g, '<br>')}</p>
             </div>
             <h3 style="color: #1f424e;">Office Information</h3>
-            <p>
-              <strong>Address:</strong> 3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043<br>
-              <strong>Phone:</strong> ${businessPhone}<br>
-              <strong>Hours:</strong> Mon-Thu 8:30am-5pm, Wed 7am-5pm, Fri 8:30am-1pm
-            </p>
+            <p><strong>Address:</strong> 3200 W Clubhouse Dr, Ste 100, Lehi, UT 84043<br><strong>Phone:</strong> ${businessPhone}<br><strong>Hours:</strong> Mon-Thu 8:30am-5pm, Wed 7am-5pm, Fri 8:30am-1pm</p>
             <p style="margin-top: 30px;">We look forward to caring for your skin!</p>
-            <p>
-              Warm regards,<br>
-              <strong>The Smart Skin Dermatology Team</strong>
-            </p>
+            <p>Warm regards,<br><strong>The Smart Skin Dermatology Team</strong></p>
           </div>
           <div style="background: #1f424e; padding: 20px; text-align: center; color: rgba(255,255,255,0.7); font-size: 12px;">
             <p style="margin: 0;">© ${new Date().getFullYear()} Smart Skin Dermatology. All rights reserved.</p>
@@ -111,21 +113,10 @@ module.exports = async (req, res) => {
       `
     };
 
-    // Send both emails
-    await Promise.all([
-      sgMail.send(businessNotification),
-      sgMail.send(autoReply)
-    ]);
-
-    return res.status(200).json({ 
-      success: true, 
-      message: 'Thank you! Your message has been sent successfully.' 
-    });
-
+    await Promise.all([sgMail.send(businessNotification), sgMail.send(autoReply)]);
+    return res.status(200).json({ success: true, message: 'Thank you! Your message has been sent successfully.' });
   } catch (error) {
     console.error('SendGrid Error:', error.response?.body || error.message);
-    return res.status(500).json({ 
-      error: 'Failed to send message. Please call us directly.' 
-    });
+    return res.status(500).json({ error: 'Failed to send message. Please call us directly.' });
   }
 };

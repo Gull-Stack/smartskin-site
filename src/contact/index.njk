@@ -44,6 +44,8 @@ description: Contact Smart Skin Dermatology in Lehi, Utah. Call (385) 273-3376 o
                 <form id="contactForm" action="/api/contact" method="POST">
                     <!-- Honeypot - bots fill this, humans don't see it -->
                     <input type="text" name="fax_number" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+                    <!-- Timestamp token (bot detection) -->
+                    <input type="hidden" name="_timestamp" id="_timestamp" value="">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
@@ -143,7 +145,9 @@ document.getElementById('contactForm').addEventListener('submit', async function
         email: form.email.value,
         phone: form.phone.value,
         service: form.service.value,
-        message: form.message.value
+        message: form.message.value,
+        fax_number: form.fax_number.value,
+        _timestamp: form._timestamp.value
     };
     
     try {
@@ -171,4 +175,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     submitBtn.disabled = false;
     submitBtn.textContent = 'Send Message';
 });
+
+// Set timestamp on page load (bots that submit too fast get blocked)
+document.getElementById('_timestamp').value = Date.now();
 </script>
