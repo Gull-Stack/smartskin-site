@@ -18,11 +18,11 @@
         </a>
         <nav id="mainNav">
             <ul>
-                <li><a href="/about/">Our Team</a></li>
-                <li><a href="/services/">Services</a></li>
-                <li><a href="/conditions/">Conditions</a></li>
-                <li><a href="/insurance/">Insurance</a></li>
-                <li><a href="/blog/">Blog</a></li>
+                <li><a href="{{ '/about/' | url }}">Our Team</a></li>
+                <li><a href="{{ '/services/' | url }}">Services</a></li>
+                <li><a href="{{ '/conditions/' | url }}">Conditions</a></li>
+                <li><a href="{{ '/insurance/' | url }}">Insurance</a></li>
+                <li><a href="{{ '/blog/' | url }}">Blog</a></li>
             </ul>
         </nav>
         <a href="tel:{{ site.phoneRaw }}" class="btn btn-primary header-cta">Book Appointment</a>

@@ -83,11 +83,11 @@ description: Looking for a trusted dermatologist in Lehi, UT? Smart Skin Dermato
             <p>Expert skin care for the whole family. From comprehensive skin cancer screenings to advanced cosmetic treatments, our board-certified team delivers personalized care you can trust.</p>
             <div class="hero-cta">
                 <a href="tel:{{ site.phoneRaw }}" class="btn btn-primary">Schedule Consultation</a>
-                <a href="/services/" class="btn btn-outline">View Our Services</a>
+                <a href="{{ '/services/' | url }}" class="btn btn-outline">View Our Services</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="/images/lehi-dermatology-clinic.jpg" alt="Smart Skin Dermatology clinic exterior in Lehi, Utah - Board certified dermatologists serving Utah County">
+            <img src="{{ '/images/lehi-dermatology-clinic.jpg' | url }}" alt="Smart Skin Dermatology clinic exterior in Lehi, Utah - Board certified dermatologists serving Utah County">
             <div class="hero-badge">
                 <div class="number">30+</div>
                 <div class="label">Years Experience</div>
@@ -135,27 +135,27 @@ description: Looking for a trusted dermatologist in Lehi, UT? Smart Skin Dermato
         </div>
         <div class="services-grid">
             <div class="service-card">
-                <img src="/images/Asset-1.png" alt="Medical dermatology consultation at Smart Skin Dermatology in Lehi Utah">
+                <img src="{{ '/images/how-often-should-you-see-a-dermatologist-1024x536-square-1b8621c50504e6bc9fd447125555e3a7-.jpg' | url }}" alt="Medical dermatology consultation at Smart Skin Dermatology in Lehi Utah">
                 <div class="service-card-content">
                     <h3>Medical Dermatology</h3>
                     <p>Expert diagnosis and treatment for acne, eczema, psoriasis, rosacea, and all skin conditions affecting your health and comfort.</p>
-                    <a href="/services/medical-dermatology/">Learn More →</a>
+                    <a href="{{ '/services/medical-dermatology/' | url }}">Learn More →</a>
                 </div>
             </div>
             <div class="service-card">
-                <img src="/images/surgical-derm-1.png" alt="Surgical dermatology and skin cancer removal at Smart Skin Dermatology">
+                <img src="{{ '/images/surgical-dermatology-utah.png' | url }}" alt="Surgical dermatology and skin cancer removal at Smart Skin Dermatology">
                 <div class="service-card-content">
                     <h3>Surgical Dermatology</h3>
                     <p>Expert surgical removal of skin cancers, cysts, moles, and other growths with precision techniques and minimal scarring.</p>
-                    <a href="/services/surgical-dermatology/">Learn More →</a>
+                    <a href="{{ '/services/surgical-dermatology/' | url }}">Learn More →</a>
                 </div>
             </div>
             <div class="service-card">
-                <img src="/images/Asset-2.png" alt="Cosmetic dermatology treatments including Botox at Smart Skin Dermatology Lehi">
+                <img src="{{ '/images/LindsaySalazar-84.jpg' | url }}" alt="Cosmetic dermatology treatments including Botox at Smart Skin Dermatology Lehi">
                 <div class="service-card-content">
                     <h3>Cosmetic Dermatology</h3>
                     <p>Rejuvenate your appearance with Botox, chemical peels, microneedling, and advanced skincare for radiant, youthful skin.</p>
-                    <a href="/services/cosmetic-dermatology/">Learn More →</a>
+                    <a href="{{ '/services/cosmetic-dermatology/' | url }}">Learn More →</a>
                 </div>
             </div>
         </div>
@@ -198,7 +198,7 @@ description: Looking for a trusted dermatologist in Lehi, UT? Smart Skin Dermato
                 <h3>Hair & Nails</h3>
                 <p>Treatment for hair loss & nail disorders</p>
             </a>
-            <a href="/conditions/skin-cancer/" class="condition-card">
+            <a href="{{ '/conditions/skin-cancer/' | url }}" class="condition-card">
                 <div class="condition-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                 </div>
@@ -213,7 +213,7 @@ description: Looking for a trusted dermatologist in Lehi, UT? Smart Skin Dermato
 <section class="location" id="location">
     <div class="container">
         <div class="location-image">
-            <img src="/images/lehi-dermatology-clinic.jpg" alt="Smart Skin Dermatology office building in Lehi Utah near Thanksgiving Point">
+            <img src="{{ '/images/lehi-dermatology-clinic.jpg' | url }}" alt="Smart Skin Dermatology office building in Lehi Utah near Thanksgiving Point">
         </div>
         <div class="location-content">
             <h2>Visit Our Lehi Office</h2>
@@ -252,9 +252,9 @@ description: Looking for a trusted dermatologist in Lehi, UT? Smart Skin Dermato
 <section class="team" id="team">
     <div class="container">
         <div class="team-images">
-            <img src="/images/dr-smart-1.png" alt="Dr. David Smart - Board Certified Dermatologist at Smart Skin Dermatology Lehi Utah" class="main-headshot">
-            <img src="/images/LindsaySalazar-17.jpg" alt="Smart Skin Dermatology team member providing patient care">
-            <img src="/images/LindsaySalazar-21.jpg" alt="Friendly dermatology staff at Smart Skin Dermatology clinic">
+            <img src="{{ '/images/dr-smart-1.png' | url }}" alt="Dr. David Smart - Board Certified Dermatologist at Smart Skin Dermatology Lehi Utah" class="main-headshot">
+            <img src="{{ '/images/LindsaySalazar-17.jpg' | url }}" alt="Smart Skin Dermatology team member providing patient care">
+            <img src="{{ '/images/LindsaySalazar-21.jpg' | url }}" alt="Friendly dermatology staff at Smart Skin Dermatology clinic">
         </div>
         <div class="team-content">
             <h2>Meet Your <span>Dermatology Team</span></h2>
@@ -265,7 +265,7 @@ description: Looking for a trusted dermatologist in Lehi, UT? Smart Skin Dermato
                 <span class="team-member-badge">{{ member.name }}, {{ member.credentials }}</span>
                 {% endfor %}
             </div>
-            <a href="/about/" class="btn btn-primary">Meet the Full Team</a>
+            <a href="{{ '/about/' | url }}" class="btn btn-primary">Meet the Full Team</a>
         </div>
     </div>
 </section>
